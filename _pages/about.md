@@ -29,15 +29,15 @@ Research Experience
 
 Optimal ANN-SNN Conversion with Group Neurons (ICASSP 2024)
 
-|[Paper](https://arxiv.org/abs/2402.19061)|[Code](https://github.com/Lyu6PosHao/ANN2SNN_GN)|
+| [Paper](https://arxiv.org/abs/2402.19061) | [Code](https://github.com/Lyu6PosHao/ANN2SNN_GN) |
 
 ProLLaMA: A Protein Large Language Model for Multi-Task Protein Language Processing (Arxiv)
 
-|[Paper](https://arxiv.org/abs/2402.16445)|[Code](https://github.com/PKU-YuanGroup/ProLLaMA)|[Model&Dataset](https://huggingface.co/GreatCaptainNemo)|
+| [Paper](https://arxiv.org/abs/2402.16445)|[Code](https://github.com/PKU-YuanGroup/ProLLaMA) | [Model&Dataset](https://huggingface.co/GreatCaptainNemo) |
 
 Machine Mindset: An MBTI Exploration of Large Language Models (Arxiv)
 
-|[Paper](https://arxiv.org/abs/2312.12999)|[Code](https://github.com/PKU-YuanGroup/Machine-Mindset)|[Model&Dataset](https://huggingface.co/datasets/PandaVT/Machine_Mindset_MBTI_dataset)|
+| [Paper](https://arxiv.org/abs/2312.12999) | [Code](https://github.com/PKU-YuanGroup/Machine-Mindset)|[Model&Dataset](https://huggingface.co/datasets/PandaVT/Machine_Mindset_MBTI_dataset) |
 
 **Research Insterest**
 
