@@ -13,7 +13,7 @@ I'm a Liuzhenghao Lv (吕刘正浩), a first year MPhil student from School of E
 Education Experience
 -----
 **2019.09-2023.07:** Information Security, School of Electronic 
-and Information Engineering, Tongji University, B.S.
+and Information Engineering, Tongji University, B.Eng.
 
 **2023.09-2026.07(~):** Computer Science, School of Electronic and Computer Engineering, Peking University, MPhil.
 
