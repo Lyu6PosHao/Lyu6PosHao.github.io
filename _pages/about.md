@@ -43,6 +43,6 @@ Machine Mindset: An MBTI Exploration of Large Language Models (Arxiv)
 
 I am interested in apply LLMs and multimodal LLMs in scientific scenarios, such as proteins and small molecules. Recently, I am also interested in the optimization of LLMs, such as better alignment with RL, better numeric understanding. 
 
-<!-- More
------ -->
-
+More
+-----
+I'm curious about the universe, cosmology and philosophy. I enjoy driving and playing PC games.
