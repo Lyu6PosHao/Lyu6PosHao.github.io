@@ -12,12 +12,12 @@ I'm a Liuzhenghao Lv (吕刘正浩), a first year MPhil student from School of E
 
 Education Experience
 -----
-**2019.09-2023.07:** Information Security, School of Electronic 
+2019.09-2023.07: Information Security, School of Electronic 
 and Information Engineering, Tongji University, B.Eng.
 
-**2023.09-2026.07(~):** Computer Science, School of Electronic and Computer Engineering, Peking University, MPhil.
+2023.09-2026.07(~): Computer Science, School of Electronic and Computer Engineering, Peking University, MPhil.
 
-**2023.10-now:** Peking University HSBC Business School, Research Intern
+2023.10-now: Peking University HSBC Business School, Research Intern
 
 Work Experience
 -----
@@ -45,4 +45,4 @@ I am interested in apply LLMs and multimodal LLMs in scientific scenarios, such 
 
 More
 -----
-I'm curious about the universe, cosmology and philosophy. I enjoy driving and playing PC games.
+I'm curious about cosmology and philosophy. I enjoy driving and playing PC games.
