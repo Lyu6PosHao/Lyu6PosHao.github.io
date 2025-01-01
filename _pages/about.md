@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Liuzhenghao Lv (吕刘正浩), a first year MPhil student from School of ECE, Peking University. I am very fortunate to be advised by [Prof. Yonghong Tian](https://scholar.google.com/citations?user=fn6hJx0AAAAJ&hl=zh-CN) and [Li Yuan](https://yuanli2333.github.io/). My research interest includes LLM, AI4Sci, SNN. I obtained my B.Eng. from Tongji University.
+I'm a Liuzhenghao Lv (吕刘正浩), a second-year MPhil student from School of ECE, Peking University. I am very fortunate to be advised by [Prof. Yonghong Tian](https://scholar.google.com/citations?user=fn6hJx0AAAAJ&hl=zh-CN) and [Li Yuan](https://yuanli2333.github.io/). My research interest includes LLM, AI4Sci, SNN. I obtained my B.Eng. from Tongji University.
 
 
 Education Experience
@@ -38,6 +38,10 @@ ProLLaMA: A Protein Large Language Model for Multi-Task Protein Language Process
 Machine Mindset: An MBTI Exploration of Large Language Models (Arxiv)
 
 [[Paper](https://arxiv.org/abs/2312.12999)] [[Code](https://github.com/PKU-YuanGroup/Machine-Mindset)] [[Model&Dataset](https://huggingface.co/datasets/PandaVT/Machine_Mindset_MBTI_dataset)]
+
+Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding (Submmited to Nature Machine Intelligence)
+
+[[Paper](https://arxiv.org/abs/2412.20888)] [[Code](https://github.com/Lyu6PosHao/HME)] [[Dataset](https://huggingface.co/datasets/GreatCaptainNemo)]
 
 **Research Insterest**
 
