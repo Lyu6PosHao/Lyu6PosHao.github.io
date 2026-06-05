@@ -236,7 +236,7 @@ redirect_from:
     <p class="lzh-lede">
       I am a Ph.D. student in the School of Computer Science at Peking University, advised by
       <a href="https://scholar.google.com/citations?user=fn6hJx0AAAAJ&hl=zh-CN">Prof. Yonghong Tian</a>
-      and <a href="https://yuanli2333.github.io/">Prof. Li Yuan</a>.
+      (co-advised by <a href="https://yuanli2333.github.io/">Prof. Li Yuan</a>).
     </p>
     <p class="lzh-lede">
       My research lies at the intersection of <strong>large language models</strong>,
