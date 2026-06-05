@@ -7,41 +7,45 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Liuzhenghao Lv (吕刘正浩), a second-year MPhil student from School of ECE, Peking University. I am very fortunate to be advised by [Prof. Yonghong Tian](https://scholar.google.com/citations?user=fn6hJx0AAAAJ&hl=zh-CN) and [Li Yuan](https://yuanli2333.github.io/). My research interest includes LLM, AI4Sci, SNN. I obtained my B.Eng. from Tongji University.
+I'm a Liuzhenghao Lv (吕刘正浩), a PhD student from School of Computer Science, Peking University. I am very fortunate to be advised by [Prof. Yonghong Tian](https://scholar.google.com/citations?user=fn6hJx0AAAAJ&hl=zh-CN) and [Li Yuan](https://yuanli2333.github.io/). My research interest is LLM/Agents for Science. I obtained my B.Eng. from Tongji University in 2023.
 
 
 Education Experience
 -----
-2019.09-2023.07: Information Security, School of Electronic 
-and Information Engineering, Tongji University, B.Eng.
+2019.09-2023.07: B.Eng., Information Security, School of Electronic 
+and Information Engineering, Tongji University, Shanghai, China
 
-2023.09-2026.07(~): Computer Science, School of Electronic and Computer Engineering, Peking University, MPhil.
+2023.09-2025.06: MPhil. Student, Computer Science, School of Electronic and Computer Engineering, Peking University, Shenzhen, China
 
-2023.10-now: Peking University HSBC Business School, Research Intern
+2025.09-2028.06 (estimated): PhD. Student, Computer Science, School of Computer Science, Peking University, Beijing/Shenzhen, China
+
+2023.10-2024.05: Research Intern, Peking University HSBC Business School, Shenzhen, China
 
 Work Experience
 -----
-**2022.08-2022.11:** Backend R&D, ByteDance, Intern
+
+2022.08-2022.11: Intern, Backend R&D, ByteDance, Shanghai, China
 
 Research Experience
 -----
-(where I am the first author or the co-first author)
+
+Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding (Nature Communications)
+
+[[Paper](https://arxiv.org/abs/2412.20888)] [[Code](https://github.com/Lyu6PosHao/HME)] [[Dataset](https://huggingface.co/datasets/GreatCaptainNemo)]
+
+ProLLaMA: A Protein Large Language Model for Multi-Task Protein Language Processing (IEEE Transactions on Artificial Intelligence)
+
+[[Paper](https://arxiv.org/abs/2402.16445)] [[Code](https://github.com/PKU-YuanGroup/ProLLaMA)]
 
 Optimal ANN-SNN Conversion with Group Neurons (ICASSP 2024)
 
 [[Paper](https://arxiv.org/abs/2402.19061)]  [[Code](https://github.com/Lyu6PosHao/ANN2SNN_GN)]
 
-ProLLaMA: A Protein Large Language Model for Multi-Task Protein Language Processing (Arxiv)
-
-[[Paper](https://arxiv.org/abs/2402.16445)] [[Code](https://github.com/PKU-YuanGroup/ProLLaMA)]  [[Model&Dataset](https://huggingface.co/GreatCaptainNemo)]
 
 Machine Mindset: An MBTI Exploration of Large Language Models (Arxiv)
 
-[[Paper](https://arxiv.org/abs/2312.12999)] [[Code](https://github.com/PKU-YuanGroup/Machine-Mindset)] [[Model&Dataset](https://huggingface.co/datasets/PandaVT/Machine_Mindset_MBTI_dataset)]
+[[Paper](https://arxiv.org/abs/2312.12999)] [[Code](https://github.com/PKU-YuanGroup/Machine-Mindset)]
 
-Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding (Submmited to Nature Machine Intelligence)
-
-[[Paper](https://arxiv.org/abs/2412.20888)] [[Code](https://github.com/Lyu6PosHao/HME)] [[Dataset](https://huggingface.co/datasets/GreatCaptainNemo)]
 
 **Research Insterest**
 
