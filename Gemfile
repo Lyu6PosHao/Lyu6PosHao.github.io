@@ -18,6 +18,10 @@ gem "github-pages", group: :jekyll_plugins
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
+# Ruby 3.4+ no longer loads csv as a default gem, while Jekyll 3.x requires it.
+gem "csv"
+gem "bigdecimal"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"
