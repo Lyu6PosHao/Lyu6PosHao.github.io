@@ -69,7 +69,7 @@ redirect_from:
 
   .lzh-interest-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
     gap: 0.8rem;
   }
 
@@ -239,9 +239,10 @@ redirect_from:
       (co-advised by <a href="https://yuanli2333.github.io/">Prof. Li Yuan</a>).
     </p>
     <p class="lzh-lede">
-      My research lies at the intersection of <strong>large language models</strong>,
-      <strong>scientific agents</strong>, and <strong>AI for Science</strong>, with a focus on models and
-      agentic systems that understand, generate, and reason over molecules, proteins, and biological protocols.
+      My research lies at the intersection of <strong>scientific foundation models</strong>,
+      <strong>molecular and protein LLMs</strong>, <strong>scientific agents</strong>, and
+      <strong>scientific evaluation</strong>, with a focus on models and agentic systems that understand,
+      generate, and reason over molecules, proteins, and biological protocols.
     </p>
     <div class="lzh-links">
       <a href="https://scholar.google.com/citations?user=lFUR8mQAAAAJ&hl=zh-CN">Google Scholar</a>
@@ -254,16 +255,20 @@ redirect_from:
     <h2 class="lzh-section-title">Research Interests</h2>
     <div class="lzh-interest-grid">
       <div class="lzh-interest">
-        <h3>AI for Science</h3>
-        <p>Molecular and protein foundation models, scientific representation learning, and scientific reasoning.</p>
+        <h3>Scientific Foundation Models</h3>
+        <p>Large-scale models for scientific representation learning, generation, and reasoning.</p>
       </div>
       <div class="lzh-interest">
-        <h3>LLM Agents</h3>
-        <p>Tool-augmented agents, workflow automation, and agentic scientific discovery.</p>
+        <h3>Molecular and Protein LLMs</h3>
+        <p>Language-model-driven molecular design, protein understanding, and protein sequence generation.</p>
       </div>
       <div class="lzh-interest">
-        <h3>Reliable Scientific LLMs</h3>
-        <p>Hallucination evaluation, numeric understanding, and alignment for scientific tasks.</p>
+        <h3>Scientific Agents</h3>
+        <p>Tool-augmented agents, workflow automation, and biological protocol reasoning.</p>
+      </div>
+      <div class="lzh-interest">
+        <h3>Scientific Evaluation</h3>
+        <p>Hallucination evaluation, benchmark construction, and reliability analysis for scientific LLMs.</p>
       </div>
     </div>
   </section>
@@ -271,6 +276,24 @@ redirect_from:
   <section class="lzh-section">
     <h2 class="lzh-section-title">Selected Publications</h2>
     <div class="lzh-pub-list">
+      <article class="lzh-pub">
+        <div class="lzh-pub-meta">
+          <span class="lzh-year">2026</span>
+          <span class="lzh-venue">Nat.<br>Commun.</span>
+        </div>
+        <div class="lzh-pub-body">
+          <h3 class="lzh-pub-title">Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding</h3>
+          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong><sup>*</sup>, Hao Li<sup>*</sup>, Yu Wang, Zhiyuan Yan, Zijun Chen, Zongying Lin, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-pub-venue-full">Nature Communications</p>
+          <p class="lzh-pub-note"><sup>*</sup> Equal contribution. Published in principle.</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2412.20888">Paper</a>
+            <a href="https://github.com/Lyu6PosHao/HME">Code</a>
+            <a href="https://huggingface.co/datasets/GreatCaptainNemo/HME_dataset">Dataset</a>
+          </div>
+        </div>
+      </article>
+
       <article class="lzh-pub">
         <div class="lzh-pub-meta">
           <span class="lzh-year">2026</span>
@@ -310,24 +333,6 @@ redirect_from:
       <article class="lzh-pub">
         <div class="lzh-pub-meta">
           <span class="lzh-year">2025</span>
-          <span class="lzh-venue">Nat.<br>Commu.</span>
-        </div>
-        <div class="lzh-pub-body">
-          <h3 class="lzh-pub-title">Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding</h3>
-          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong><sup>*</sup>, Hao Li<sup>*</sup>, Yu Wang, Zhiyuan Yan, Zijun Chen, Zongying Lin, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">Nature Communications</p>
-          <p class="lzh-pub-note"><sup>*</sup> Equal contribution</p>
-          <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2412.20888">Paper</a>
-            <a href="https://github.com/Lyu6PosHao/HME">Code</a>
-            <a href="https://huggingface.co/datasets/GreatCaptainNemo/HME_dataset">Dataset</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="lzh-pub">
-        <div class="lzh-pub-meta">
-          <span class="lzh-year">2025</span>
           <span class="lzh-venue">NeurIPS<br>AI4Sci.</span>
         </div>
         <div class="lzh-pub-body">
@@ -345,6 +350,23 @@ redirect_from:
       <article class="lzh-pub">
         <div class="lzh-pub-meta">
           <span class="lzh-year">2025</span>
+          <span class="lzh-venue">IEEE TAI</span>
+        </div>
+        <div class="lzh-pub-body">
+          <h3 class="lzh-pub-title">ProLLaMA: A Protein Large Language Model for Multitask Protein Language Processing</h3>
+          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Zongying Lin, Hao Li, Yuyang Liu, Jiaxi Cui, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-pub-venue-full">IEEE Transactions on Artificial Intelligence</p>
+          <p class="lzh-pub-note">Highly Cited Paper</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2402.16445">Paper</a>
+            <a href="https://github.com/PKU-YuanGroup/ProLLaMA">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="lzh-pub">
+        <div class="lzh-pub-meta">
+          <span class="lzh-year">2024</span>
           <span class="lzh-venue">SCIS</span>
         </div>
         <div class="lzh-pub-body">
@@ -354,22 +376,6 @@ redirect_from:
           <div class="lzh-pub-links">
             <a href="https://doi.org/10.1007/s11432-024-4296-6">Paper</a>
             <a href="https://arxiv.org/abs/2402.17156">arXiv</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="lzh-pub">
-        <div class="lzh-pub-meta">
-          <span class="lzh-year">2024</span>
-          <span class="lzh-venue">IEEE TAI</span>
-        </div>
-        <div class="lzh-pub-body">
-          <h3 class="lzh-pub-title">ProLLaMA: A Protein Large Language Model for Multitask Protein Language Processing</h3>
-          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Zongying Lin, Hao Li, Yuyang Liu, Jiaxi Cui, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">IEEE Transactions on Artificial Intelligence</p>
-          <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2402.16445">Paper</a>
-            <a href="https://github.com/PKU-YuanGroup/ProLLaMA">Code</a>
           </div>
         </div>
       </article>
@@ -413,8 +419,9 @@ redirect_from:
         </div>
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">Machine Mindset: An MBTI Exploration of Large Language Models</h3>
-          <p class="lzh-authors">Jiaxi Cui, <strong>Liuzhenghao Lv</strong>, Jing Wen, Rongsheng Wang, Jing Tang, Yonghong Tian, Li Yuan</p>
+          <p class="lzh-authors">Jiaxi Cui<sup>*</sup>, <strong>Liuzhenghao Lv</strong><sup>*</sup>, Jing Wen, Rongsheng Wang, Jing Tang, Yonghong Tian, Li Yuan</p>
           <p class="lzh-pub-venue-full">arXiv</p>
+          <p class="lzh-pub-note"><sup>*</sup> Equal contribution</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2312.12999">Paper</a>
             <a href="https://github.com/PKU-YuanGroup/Machine-Mindset">Code</a>
@@ -446,12 +453,28 @@ redirect_from:
     <h2 class="lzh-section-title">Experience</h2>
     <div class="lzh-timeline">
       <div class="lzh-time-item">
+        <h3>Ph.D. and M.Phil. Researcher, Peking University</h3>
+        <p>Beijing / Shenzhen, China · 2023.09 - Present. Research on HME, ProLLaMA, BioProBench, BioProAgent, and reliability evaluation for scientific LLMs.</p>
+      </div>
+      <div class="lzh-time-item">
+        <h3>First Student Contributor, AI for Science Platform, Peking University</h3>
+        <p>Beijing / Shenzhen, China · 2025 - Present. Contributing to digital laboratory workflows and experimental-protocol agents for scientific automation.</p>
+      </div>
+      <div class="lzh-time-item">
+        <h3>Research Intern, AI Search Group, Baidu</h3>
+        <p>Beijing, China · 2025.12 - 2026.03. Working on agentic reinforcement learning for skill-using AI agents.</p>
+      </div>
+      <div class="lzh-time-item">
         <h3>Research Intern, Peking University HSBC Business School</h3>
-        <p>Shenzhen, China · 2023.10 - 2024.05</p>
+        <p>Shenzhen, China · 2023.10 - 2024.05. Applied retrieval-augmented generation to AI-related patent identification and patent corpus analysis.</p>
+      </div>
+      <div class="lzh-time-item">
+        <h3>Official Contributor, SpikingJelly</h3>
+        <p>Open-source deep learning framework for spiking neural networks · 2023. Contributed to a widely used SNN framework recommended by Nature Computational Science.</p>
       </div>
       <div class="lzh-time-item">
         <h3>Backend R&amp;D Intern, ByteDance</h3>
-        <p>Shanghai, China · 2022.08 - 2022.11</p>
+        <p>Shanghai, China · 2022.08 - 2022.11. Backend research and development for production software systems.</p>
       </div>
     </div>
   </section>
