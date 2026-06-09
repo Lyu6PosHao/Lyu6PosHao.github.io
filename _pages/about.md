@@ -274,6 +274,24 @@ redirect_from:
   </section>
 
   <section class="lzh-section">
+    <h2 class="lzh-section-title">Education</h2>
+    <div class="lzh-timeline">
+      <div class="lzh-time-item">
+        <h3>Ph.D. Student, Computer Science, Peking University (Successive Postgraduate and Doctoral Programs)</h3>
+        <p>School of Computer Science · 2025.09 - 2028.06 (expected)</p>
+      </div>
+      <div class="lzh-time-item">
+        <h3>M.Phil. Student, Computer Science, Peking University</h3>
+        <p>School of Electronic and Computer Engineering · 2023.09 - 2025.06</p>
+      </div>
+      <div class="lzh-time-item">
+        <h3>B.Eng., Information Security, Tongji University</h3>
+        <p>School of Electronic and Information Engineering · 2019.09 - 2023.07</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lzh-section">
     <h2 class="lzh-section-title">Selected Publications</h2>
     <div class="lzh-pub-list">
       <article class="lzh-pub">
@@ -429,24 +447,6 @@ redirect_from:
           </div>
         </div>
       </article>
-    </div>
-  </section>
-
-  <section class="lzh-section">
-    <h2 class="lzh-section-title">Education</h2>
-    <div class="lzh-timeline">
-      <div class="lzh-time-item">
-        <h3>Ph.D. Student, Computer Science, Peking University</h3>
-        <p>School of Computer Science · 2025.09 - 2028.06 (expected)</p>
-      </div>
-      <div class="lzh-time-item">
-        <h3>M.Phil. Student, Computer Science, Peking University</h3>
-        <p>School of Electronic and Computer Engineering · 2023.09 - 2025.06</p>
-      </div>
-      <div class="lzh-time-item">
-        <h3>B.Eng., Information Security, Tongji University</h3>
-        <p>School of Electronic and Information Engineering · 2019.09 - 2023.07</p>
-      </div>
     </div>
   </section>
 
