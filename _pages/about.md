@@ -303,7 +303,7 @@ redirect_from:
           <h3 class="lzh-pub-title">Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong><sup>*</sup>, Hao Li<sup>*</sup>, Yu Wang, Zhiyuan Yan, Zijun Chen, Zongying Lin, Li Yuan, Yonghong Tian</p>
           <p class="lzh-pub-venue-full">Nature Communications</p>
-          <p class="lzh-pub-note"><sup>*</sup> Equal contribution. Published in principle.</p>
+          <p class="lzh-pub-note"><sup>*</sup> Equal contribution.</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2412.20888">Paper</a>
             <a href="https://github.com/Lyu6PosHao/HME">Code</a>
