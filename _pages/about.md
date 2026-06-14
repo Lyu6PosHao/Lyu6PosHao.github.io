@@ -301,7 +301,7 @@ redirect_from:
         </div>
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding</h3>
-          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong><sup>*</sup>, Hao Li<sup>*</sup>, Yu Wang, Zhiyuan Yan, Zijun Chen, Zongying Lin, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong><sup>*</sup>, Hao Li<sup>*</sup>, Yu Wang, Zijun Chen, Zhiyuan Yan, Zongying Lin, Yuyang Liu, Li Yuan, Yonghong Tian</p>
           <p class="lzh-pub-venue-full">Nature Communications</p>
           <p class="lzh-pub-note"><sup>*</sup> Equal contribution.</p>
           <div class="lzh-pub-links">
