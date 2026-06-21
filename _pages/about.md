@@ -357,7 +357,6 @@ redirect_from:
           <h3 class="lzh-pub-title">ProLLaMA: A Protein Large Language Model for Multitask Protein Language Processing</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Zongying Lin, Hao Li, Yuyang Liu, Jiaxi Cui, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian</p>
           <p class="lzh-pub-venue-full">IEEE Transactions on Artificial Intelligence</p>
-          <p class="lzh-pub-note">Highly Cited Paper</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2402.16445">Paper</a>
             <a href="https://github.com/PKU-YuanGroup/ProLLaMA">Code</a>
