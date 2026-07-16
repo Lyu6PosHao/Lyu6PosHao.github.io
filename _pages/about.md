@@ -460,10 +460,10 @@ redirect_from:
         <h3>First Student Contributor, AI for Science Platform, Peking University</h3>
         <p>Beijing / Shenzhen, China · 2025 - Present. Contributing to digital laboratory workflows and experimental-protocol agents for scientific automation.</p>
       </div>
-      <div class="lzh-time-item">
+      <!-- <div class="lzh-time-item">
         <h3>Research Intern, AI Search Group, Baidu</h3>
         <p>Beijing, China · 2025.12 - 2026.03. Working on agentic reinforcement learning for skill-using AI agents.</p>
-      </div>
+      </div> -->
       <div class="lzh-time-item">
         <h3>Research Intern, Peking University HSBC Business School</h3>
         <p>Shenzhen, China · 2023.10 - 2024.05. Applied retrieval-augmented generation to AI-related patent identification and patent corpus analysis.</p>
