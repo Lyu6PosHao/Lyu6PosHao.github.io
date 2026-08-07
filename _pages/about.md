@@ -78,15 +78,6 @@ redirect_from:
     background: #fff;
   }
 
-  .lzh-year {
-    display: block;
-    margin-bottom: 0.35rem;
-    font-size: 0.82rem;
-    line-height: 1.2;
-    font-weight: 700;
-    color: var(--blue);
-  }
-
   .lzh-pub-body {
     padding: 0.85rem 0.95rem;
   }
@@ -223,10 +214,9 @@ redirect_from:
     <div class="lzh-pub-list">
       <article class="lzh-pub">
         <div class="lzh-pub-body">
-          <span class="lzh-year">2026</span>
           <h3 class="lzh-pub-title">Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Hao Li<sup>&dagger;</sup>, Yu Wang, Zijun Chen, Zhiyuan Yan, Zongying Lin, Yuyang Liu, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">Nature Communications</p>
+          <p class="lzh-pub-venue-full">Nature Communications, 2026</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2412.20888">Paper</a>
             {% include github-repo-link.html repo="Lyu6PosHao/HME" %}
@@ -237,10 +227,21 @@ redirect_from:
 
       <article class="lzh-pub">
         <div class="lzh-pub-body">
-          <span class="lzh-year">2026</span>
+          <h3 class="lzh-pub-title">ProLLaMA: A Protein Large Language Model for Multitask Protein Language Processing</h3>
+          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Zongying Lin, Hao Li, Yuyang Liu, Jiaxi Cui, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-pub-venue-full">IEEE Transactions on Artificial Intelligence, 2025</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2402.16445">Paper</a>
+            {% include github-repo-link.html repo="PKU-YuanGroup/ProLLaMA" %}
+          </div>
+        </div>
+      </article>
+
+      <article class="lzh-pub">
+        <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">Bridging the Gap in Autonomous Science: The Corpus and Benchmark for Biological Protocol Reasoning</h3>
           <p class="lzh-authors">Yuyang Liu<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Xiancheng Zhang, Jingya Wang, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">ICML</p>
+          <p class="lzh-pub-venue-full">ICML, 2026</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2505.07889">Paper</a>
             {% include github-repo-link.html repo="YuyangSunshine/bioprotocolbench" %}
@@ -251,10 +252,21 @@ redirect_from:
 
       <article class="lzh-pub">
         <div class="lzh-pub-body">
-          <span class="lzh-year">2026</span>
+          <h3 class="lzh-pub-title">Machine Mindset: An MBTI Exploration of Large Language Models</h3>
+          <p class="lzh-authors">Jiaxi Cui<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Jing Wen, Rongsheng Wang, Jing Tang, Yonghong Tian, Li Yuan</p>
+          <p class="lzh-pub-venue-full">arXiv, 2023</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2312.12999">Paper</a>
+            {% include github-repo-link.html repo="PKU-YuanGroup/Machine-Mindset" %}
+          </div>
+        </div>
+      </article>
+
+      <article class="lzh-pub">
+        <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">BioProAgent: Neuro-Symbolic Grounding for Constrained Scientific Planning</h3>
           <p class="lzh-authors">Yuyang Liu, Jingya Wang, <strong>Liuzhenghao Lv</strong>, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">ACL Main (Oral)</p>
+          <p class="lzh-pub-venue-full">ACL Main (Oral), 2026</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2603.00876">Paper</a>
             {% include github-repo-link.html repo="YuyangSunshine/bioproagent" %}
@@ -265,79 +277,12 @@ redirect_from:
 
       <article class="lzh-pub">
         <div class="lzh-pub-body">
-          <span class="lzh-year">2025</span>
-          <h3 class="lzh-pub-title">ProLLaMA: A Protein Large Language Model for Multitask Protein Language Processing</h3>
-          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Zongying Lin, Hao Li, Yuyang Liu, Jiaxi Cui, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">IEEE Transactions on Artificial Intelligence</p>
-          <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2402.16445">Paper</a>
-            {% include github-repo-link.html repo="PKU-YuanGroup/ProLLaMA" %}
-          </div>
-        </div>
-      </article>
-
-      <article class="lzh-pub">
-        <div class="lzh-pub-body">
-          <span class="lzh-year">2025</span>
-          <h3 class="lzh-pub-title">How to Detect and Defeat Molecular Mirage: A Metric-Driven Benchmark for Hallucination in LLM-based Molecular Comprehension</h3>
-          <p class="lzh-authors">Hao Li<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, He Cao, Zijing Liu, Zhiyuan Yan, Yu Wang, Yonghong Tian, Yu Li, Li Yuan</p>
-          <p class="lzh-pub-venue-full">NeurIPS Workshop on AI for Science</p>
-          <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2504.12314">Paper</a>
-            <a href="https://openreview.net/forum?id=REcdfjLUSI">OpenReview</a>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="lzh-pub">
-        <div class="lzh-pub-body">
-          <span class="lzh-year">2024</span>
-          <h3 class="lzh-pub-title">TaxDiff: Taxonomic-Guided Diffusion Model for Protein Sequence Generation</h3>
-          <p class="lzh-authors">Zongying Lin, Hao Li, <strong>Liuzhenghao Lv</strong>, Yu Wang, Bin Lin, Junwu Zhang, Zijun Chen, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">Science China Information Sciences</p>
-          <div class="lzh-pub-links">
-            <a href="https://doi.org/10.1007/s11432-024-4296-6">Paper</a>
-            <a href="https://arxiv.org/abs/2402.17156">arXiv</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="lzh-pub">
-        <div class="lzh-pub-body">
-          <span class="lzh-year">2024</span>
           <h3 class="lzh-pub-title">Optimal ANN-SNN Conversion with Group Neurons</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Wei Fang, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">ICASSP</p>
+          <p class="lzh-pub-venue-full">ICASSP, 2024</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2402.19061">Paper</a>
             {% include github-repo-link.html repo="Lyu6PosHao/ANN2SNN_GN" %}
-          </div>
-        </div>
-      </article>
-
-      <article class="lzh-pub">
-        <div class="lzh-pub-body">
-          <span class="lzh-year">2023</span>
-          <h3 class="lzh-pub-title">HPC-Atlas: Computationally Constructing a Comprehensive Atlas of Human Protein Complexes</h3>
-          <p class="lzh-authors">Yuliang Pan, Ruiyi Li, Wengen Li, <strong>Liuzhenghao Lv</strong>, Jihong Guan, Shuigeng Zhou</p>
-          <p class="lzh-pub-venue-full">Genomics, Proteomics &amp; Bioinformatics</p>
-          <div class="lzh-pub-links">
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10928439/">Paper</a>
-            {% include github-repo-link.html repo="yul-pan/HPC-Atlas" %}
-          </div>
-        </div>
-      </article>
-
-      <article class="lzh-pub">
-        <div class="lzh-pub-body">
-          <span class="lzh-year">2023</span>
-          <h3 class="lzh-pub-title">Machine Mindset: An MBTI Exploration of Large Language Models</h3>
-          <p class="lzh-authors">Jiaxi Cui<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Jing Wen, Rongsheng Wang, Jing Tang, Yonghong Tian, Li Yuan</p>
-          <p class="lzh-pub-venue-full">arXiv</p>
-          <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2312.12999">Paper</a>
-            {% include github-repo-link.html repo="PKU-YuanGroup/Machine-Mindset" %}
           </div>
         </div>
       </article>
@@ -349,10 +294,10 @@ redirect_from:
     <div class="lzh-timeline">
       <div class="lzh-time-item">
         <h3>Ph.D. and M.Phil. Researcher, Peking University</h3>
-        <p>Beijing / Shenzhen, China · 2023.09 - Present. Research on HME, ProLLaMA, BioProBench, BioProAgent, and reliability evaluation for scientific LLMs.</p>
+        <p>Beijing / Shenzhen, China · 2023.09 - Present. Research on AI for biochemistry.</p>
       </div>
       <div class="lzh-time-item">
-        <h3>First Student Contributor, AI for Science Platform, Peking University</h3>
+        <h3>Main Contributor, AI for Science Platform, Peking University</h3>
         <p>Beijing / Shenzhen, China · 2025 - Present. Contributing to digital laboratory workflows and experimental-protocol agents for scientific automation.</p>
       </div>
       <!-- <div class="lzh-time-item">
@@ -365,7 +310,7 @@ redirect_from:
       </div>
       <div class="lzh-time-item">
         <h3>Official Contributor, SpikingJelly</h3>
-        <p>Open-source deep learning framework for spiking neural networks · 2023. Contributed to a widely used SNN framework recommended by Nature Computational Science.</p>
+        <p>Open-source deep learning framework for spiking neural networks · 2023. Published in Science Advances.</p>
       </div>
       <div class="lzh-time-item">
         <h3>Backend R&amp;D Intern, ByteDance</h3>
