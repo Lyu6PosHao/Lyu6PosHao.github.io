@@ -101,7 +101,7 @@ redirect_from:
     margin-top: 0.35rem;
     font-size: 0.72rem;
     line-height: 1.25;
-    color: var(--muted);
+    color: var(--green);
     font-weight: 700;
   }
 
@@ -125,10 +125,11 @@ redirect_from:
 
   .lzh-pub-venue-full {
     margin: 0.35rem 0 0;
-    color: var(--ink);
+    color: var(--green);
     font-size: 0.84rem;
     line-height: 1.45;
     font-style: italic;
+    font-weight: 600;
   }
 
   .lzh-pub-note {
@@ -160,15 +161,10 @@ redirect_from:
   .lzh-pub-links .lzh-github-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.3rem;
   }
 
   .lzh-pub-links .lzh-github-link:hover {
     text-decoration: none;
-  }
-
-  .lzh-github-link .fa-github {
-    font-size: 1.05rem;
   }
 
   .lzh-github-stars {
@@ -267,7 +263,7 @@ redirect_from:
 
   <section class="lzh-section">
     <h2 class="lzh-section-title">Selected Publications</h2>
-    <p class="lzh-pub-legend"><sup>*</sup> Equal contribution.</p>
+    <p class="lzh-pub-legend"><sup>&dagger;</sup> Equal contribution.</p>
     <div class="lzh-pub-list">
       <article class="lzh-pub">
         <div class="lzh-pub-meta">
@@ -276,9 +272,8 @@ redirect_from:
         </div>
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding</h3>
-          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong><sup>*</sup>, Hao Li<sup>*</sup>, Yu Wang, Zijun Chen, Zhiyuan Yan, Zongying Lin, Yuyang Liu, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Hao Li<sup>&dagger;</sup>, Yu Wang, Zijun Chen, Zhiyuan Yan, Zongying Lin, Yuyang Liu, Li Yuan, Yonghong Tian</p>
           <p class="lzh-pub-venue-full">Nature Communications</p>
-          <p class="lzh-pub-note"><sup>*</sup> Equal contribution.</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2412.20888">Paper</a>
             {% include github-repo-link.html repo="Lyu6PosHao/HME" %}
@@ -294,9 +289,8 @@ redirect_from:
         </div>
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">Bridging the Gap in Autonomous Science: The Corpus and Benchmark for Biological Protocol Reasoning</h3>
-          <p class="lzh-authors">Yuyang Liu<sup>*</sup>, <strong>Liuzhenghao Lv</strong><sup>*</sup>, Xiancheng Zhang, Jingya Wang, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-authors">Yuyang Liu<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Xiancheng Zhang, Jingya Wang, Li Yuan, Yonghong Tian</p>
           <p class="lzh-pub-venue-full">International Conference on Machine Learning (ICML 2026)</p>
-          <p class="lzh-pub-note"><sup>*</sup> Equal contribution</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2505.07889">Paper</a>
             {% include github-repo-link.html repo="YuyangSunshine/bioprotocolbench" %}
@@ -346,9 +340,8 @@ redirect_from:
         </div>
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">How to Detect and Defeat Molecular Mirage: A Metric-Driven Benchmark for Hallucination in LLM-based Molecular Comprehension</h3>
-          <p class="lzh-authors">Hao Li<sup>*</sup>, <strong>Liuzhenghao Lv</strong><sup>*</sup>, He Cao, Zijing Liu, Zhiyuan Yan, Yu Wang, Yonghong Tian, Yu Li, Li Yuan</p>
+          <p class="lzh-authors">Hao Li<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, He Cao, Zijing Liu, Zhiyuan Yan, Yu Wang, Yonghong Tian, Yu Li, Li Yuan</p>
           <p class="lzh-pub-venue-full">NeurIPS 2025 Workshop on AI for Science</p>
-          <p class="lzh-pub-note"><sup>*</sup> Equal contribution</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2504.12314">Paper</a>
             <a href="https://openreview.net/forum?id=REcdfjLUSI">OpenReview</a>
@@ -412,9 +405,8 @@ redirect_from:
         </div>
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">Machine Mindset: An MBTI Exploration of Large Language Models</h3>
-          <p class="lzh-authors">Jiaxi Cui<sup>*</sup>, <strong>Liuzhenghao Lv</strong><sup>*</sup>, Jing Wen, Rongsheng Wang, Jing Tang, Yonghong Tian, Li Yuan</p>
+          <p class="lzh-authors">Jiaxi Cui<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Jing Wen, Rongsheng Wang, Jing Tang, Yonghong Tian, Li Yuan</p>
           <p class="lzh-pub-venue-full">arXiv</p>
-          <p class="lzh-pub-note"><sup>*</sup> Equal contribution</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2312.12999">Paper</a>
             {% include github-repo-link.html repo="PKU-YuanGroup/Machine-Mindset" %}
