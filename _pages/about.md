@@ -157,6 +157,26 @@ redirect_from:
     font-weight: 600;
   }
 
+  .lzh-pub-links .lzh-github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .lzh-pub-links .lzh-github-link:hover {
+    text-decoration: none;
+  }
+
+  .lzh-github-link .fa-github {
+    font-size: 1.05rem;
+  }
+
+  .lzh-github-stars {
+    display: block;
+    width: auto;
+    height: 20px;
+  }
+
   .lzh-timeline {
     border-left: 2px solid var(--line);
     margin-left: 0.35rem;
@@ -261,7 +281,7 @@ redirect_from:
           <p class="lzh-pub-note"><sup>*</sup> Equal contribution.</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2412.20888">Paper</a>
-            <a href="https://github.com/Lyu6PosHao/HME">Code</a>
+            {% include github-repo-link.html repo="Lyu6PosHao/HME" %}
             <a href="https://huggingface.co/datasets/GreatCaptainNemo/HME_dataset">Dataset</a>
           </div>
         </div>
@@ -279,7 +299,7 @@ redirect_from:
           <p class="lzh-pub-note"><sup>*</sup> Equal contribution</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2505.07889">Paper</a>
-            <a href="https://github.com/YuyangSunshine/bioprotocolbench">Code</a>
+            {% include github-repo-link.html repo="YuyangSunshine/bioprotocolbench" %}
             <a href="https://huggingface.co/datasets/BioProBench/BioProBench">Dataset</a>
           </div>
         </div>
@@ -297,7 +317,7 @@ redirect_from:
           <p class="lzh-pub-note">Oral Presentation</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2603.00876">Paper</a>
-            <a href="https://github.com/YuyangSunshine/bioproagent">Code</a>
+            {% include github-repo-link.html repo="YuyangSunshine/bioproagent" %}
             <a href="https://yuyangsunshine.github.io/BioPro-Project/">Project</a>
           </div>
         </div>
@@ -314,7 +334,7 @@ redirect_from:
           <p class="lzh-pub-venue-full">IEEE Transactions on Artificial Intelligence</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2402.16445">Paper</a>
-            <a href="https://github.com/PKU-YuanGroup/ProLLaMA">Code</a>
+            {% include github-repo-link.html repo="PKU-YuanGroup/ProLLaMA" %}
           </div>
         </div>
       </article>
@@ -364,7 +384,7 @@ redirect_from:
           <p class="lzh-pub-venue-full">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2024)</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2402.19061">Paper</a>
-            <a href="https://github.com/Lyu6PosHao/ANN2SNN_GN">Code</a>
+            {% include github-repo-link.html repo="Lyu6PosHao/ANN2SNN_GN" %}
           </div>
         </div>
       </article>
@@ -380,7 +400,7 @@ redirect_from:
           <p class="lzh-pub-venue-full">Genomics, Proteomics &amp; Bioinformatics</p>
           <div class="lzh-pub-links">
             <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10928439/">Paper</a>
-            <a href="https://github.com/yul-pan/HPC-Atlas">Code</a>
+            {% include github-repo-link.html repo="yul-pan/HPC-Atlas" %}
           </div>
         </div>
       </article>
@@ -397,7 +417,7 @@ redirect_from:
           <p class="lzh-pub-note"><sup>*</sup> Equal contribution</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2312.12999">Paper</a>
-            <a href="https://github.com/PKU-YuanGroup/Machine-Mindset">Code</a>
+            {% include github-repo-link.html repo="PKU-YuanGroup/Machine-Mindset" %}
           </div>
         </div>
       </article>
