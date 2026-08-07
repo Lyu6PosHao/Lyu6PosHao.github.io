@@ -114,13 +114,6 @@ redirect_from:
     font-weight: 600;
   }
 
-  .lzh-pub-note {
-    margin: 0.35rem 0 0;
-    color: var(--green);
-    font-size: 0.82rem;
-    font-weight: 600;
-  }
-
   .lzh-pub-legend {
     margin: 0 0 0.8rem;
     color: var(--muted);
@@ -247,7 +240,7 @@ redirect_from:
           <span class="lzh-year">2026</span>
           <h3 class="lzh-pub-title">Bridging the Gap in Autonomous Science: The Corpus and Benchmark for Biological Protocol Reasoning</h3>
           <p class="lzh-authors">Yuyang Liu<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Xiancheng Zhang, Jingya Wang, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">International Conference on Machine Learning (ICML)</p>
+          <p class="lzh-pub-venue-full">ICML</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2505.07889">Paper</a>
             {% include github-repo-link.html repo="YuyangSunshine/bioprotocolbench" %}
@@ -261,8 +254,7 @@ redirect_from:
           <span class="lzh-year">2026</span>
           <h3 class="lzh-pub-title">BioProAgent: Neuro-Symbolic Grounding for Constrained Scientific Planning</h3>
           <p class="lzh-authors">Yuyang Liu, Jingya Wang, <strong>Liuzhenghao Lv</strong>, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">ACL</p>
-          <p class="lzh-pub-note">Oral Presentation</p>
+          <p class="lzh-pub-venue-full">ACL Main (Oral)</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2603.00876">Paper</a>
             {% include github-repo-link.html repo="YuyangSunshine/bioproagent" %}
