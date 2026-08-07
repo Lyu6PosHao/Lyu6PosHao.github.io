@@ -141,6 +141,11 @@ analytics:
   google:
     tracking_id          :
 
+# Public visitor counter shown in the footer.
+visitor_counter:
+  enabled                : true
+  provider               : "busuanzi"
+
 
 # Reading Files
 include:

@@ -1,4 +1,8 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+{% if site.visitor_counter.enabled and site.visitor_counter.provider == "busuanzi" %}
+<script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
+{% endif %}
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
