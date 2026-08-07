@@ -138,6 +138,13 @@ redirect_from:
     font-weight: 600;
   }
 
+  .lzh-pub-legend {
+    margin: 0 0 0.8rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
   .lzh-pub-links {
     margin-top: 0.55rem;
     display: flex;
@@ -240,6 +247,7 @@ redirect_from:
 
   <section class="lzh-section">
     <h2 class="lzh-section-title">Selected Publications</h2>
+    <p class="lzh-pub-legend"><sup>*</sup> Equal contribution.</p>
     <div class="lzh-pub-list">
       <article class="lzh-pub">
         <div class="lzh-pub-meta">
