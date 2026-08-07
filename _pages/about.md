@@ -67,33 +67,6 @@ redirect_from:
     padding-bottom: 0.35rem;
   }
 
-  .lzh-interest-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
-    gap: 0.8rem;
-  }
-
-  .lzh-interest {
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 0.85rem;
-    background: #fff;
-  }
-
-  .lzh-interest h3 {
-    margin: 0 0 0.35rem;
-    font-size: 0.98rem;
-    line-height: 1.3;
-    letter-spacing: 0;
-  }
-
-  .lzh-interest p {
-    margin: 0;
-    color: var(--muted);
-    font-size: 0.86rem;
-    line-height: 1.55;
-  }
-
   .lzh-pub-list {
     display: grid;
     gap: 0.85rem;
@@ -206,10 +179,6 @@ redirect_from:
   }
 
   @media (max-width: 760px) {
-    .lzh-interest-grid {
-      grid-template-columns: 1fr;
-    }
-
     .lzh-pub {
       grid-template-columns: 1fr;
     }
@@ -248,28 +217,6 @@ redirect_from:
       <a href="https://scholar.google.com/citations?user=lFUR8mQAAAAJ&hl=zh-CN">Google Scholar</a>
       <a href="https://github.com/Lyu6PosHao">GitHub</a>
       <a href="https://huggingface.co/GreatCaptainNemo">Hugging Face</a>
-    </div>
-  </section>
-
-  <section class="lzh-section">
-    <h2 class="lzh-section-title">Research Interests</h2>
-    <div class="lzh-interest-grid">
-      <div class="lzh-interest">
-        <h3>Scientific Foundation Models</h3>
-        <p>Large-scale models for scientific representation learning, generation, and reasoning.</p>
-      </div>
-      <div class="lzh-interest">
-        <h3>Molecular and Protein LLMs</h3>
-        <p>Language-model-driven molecular design, protein understanding, and protein sequence generation.</p>
-      </div>
-      <div class="lzh-interest">
-        <h3>Scientific Agents</h3>
-        <p>Tool-augmented agents, workflow automation, and biological protocol reasoning.</p>
-      </div>
-      <div class="lzh-interest">
-        <h3>Scientific Evaluation</h3>
-        <p>Hallucination evaluation, benchmark construction, and reliability analysis for scientific LLMs.</p>
-      </div>
     </div>
   </section>
 
