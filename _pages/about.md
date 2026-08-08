@@ -20,12 +20,12 @@ redirect_from:
   }
 
   .lzh-hero {
-    padding: 1.15rem 1.25rem;
+    padding: 0.9rem 1rem;
     border: 1px solid var(--line);
     border-left: 5px solid var(--blue);
     border-radius: 8px;
     background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%);
-    margin-bottom: 1.35rem;
+    margin-bottom: 1rem;
   }
 
   .lzh-name {
@@ -36,7 +36,7 @@ redirect_from:
   }
 
   .lzh-lede {
-    margin: 0.55rem 0 0;
+    margin: 0.4rem 0 0;
     color: var(--muted);
     font-size: 0.98rem;
     line-height: 1.65;
@@ -46,7 +46,7 @@ redirect_from:
     display: flex;
     flex-wrap: wrap;
     gap: 0.45rem 0.85rem;
-    margin-top: 0.85rem;
+    margin-top: 0.65rem;
     font-size: 0.9rem;
   }
 
@@ -55,11 +55,11 @@ redirect_from:
   }
 
   .lzh-section {
-    margin-top: 1.55rem;
+    margin-top: 1.15rem;
   }
 
   .lzh-section-title {
-    margin: 0 0 0.8rem;
+    margin: 0 0 0.6rem;
     font-size: 1.08rem;
     line-height: 1.35;
     letter-spacing: 0;
@@ -69,7 +69,7 @@ redirect_from:
 
   .lzh-pub-list {
     display: grid;
-    gap: 0.85rem;
+    gap: 0.65rem;
   }
 
   .lzh-pub {
@@ -79,7 +79,7 @@ redirect_from:
   }
 
   .lzh-pub-body {
-    padding: 0.85rem 0.95rem;
+    padding: 0.7rem 0.85rem;
   }
 
   .lzh-pub-title {
@@ -90,14 +90,14 @@ redirect_from:
   }
 
   .lzh-authors {
-    margin: 0.45rem 0 0;
+    margin: 0.3rem 0 0;
     color: var(--muted);
     font-size: 0.84rem;
     line-height: 1.55;
   }
 
   .lzh-pub-venue-full {
-    margin: 0.35rem 0 0;
+    margin: 0.25rem 0 0;
     color: var(--green);
     font-size: 0.84rem;
     line-height: 1.45;
@@ -106,14 +106,14 @@ redirect_from:
   }
 
   .lzh-pub-legend {
-    margin: 0 0 0.8rem;
+    margin: 0 0 0.6rem;
     color: var(--muted);
     font-size: 0.82rem;
     line-height: 1.45;
   }
 
   .lzh-pub-links {
-    margin-top: 0.55rem;
+    margin-top: 0.4rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem 0.65rem;
@@ -146,7 +146,7 @@ redirect_from:
   }
 
   .lzh-time-item {
-    margin: 0 0 0.9rem;
+    margin: 0 0 0.65rem;
   }
 
   .lzh-time-item:last-child {
@@ -315,6 +315,15 @@ redirect_from:
       <div class="lzh-time-item">
         <h3>Backend R&amp;D Intern, ByteDance</h3>
         <p>Shanghai, China · 2022.08 - 2022.11. Backend research and development for production software systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lzh-section">
+    <h2 class="lzh-section-title">Academic Service</h2>
+    <div class="lzh-timeline">
+      <div class="lzh-time-item">
+        <h3>Reviewer, AAAI Conference on Artificial Intelligence</h3>
       </div>
     </div>
   </section>
