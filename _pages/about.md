@@ -334,7 +334,8 @@ redirect_from:
     <h2 class="lzh-section-title">Academic Service</h2>
     <div class="lzh-timeline">
       <div class="lzh-time-item">
-        <h3>Reviewer, AAAI Conference on Artificial Intelligence</h3>
+        <p>Reviewer, AAAI</p>
+        <p>Reviewer, NeurIPS</p>
       </div>
     </div>
   </section>
