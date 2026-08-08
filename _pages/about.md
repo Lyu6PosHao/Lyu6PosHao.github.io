@@ -30,7 +30,7 @@ redirect_from:
 
   .lzh-name {
     margin: 0 0 0.35rem;
-    font-size: 1.55rem;
+    font-size: 1.4rem;
     line-height: 1.2;
     letter-spacing: 0;
   }
@@ -38,8 +38,8 @@ redirect_from:
   .lzh-lede {
     margin: 0.4rem 0 0;
     color: var(--muted);
-    font-size: 0.98rem;
-    line-height: 1.65;
+    font-size: 0.9rem;
+    line-height: 1.55;
   }
 
   .lzh-links {
@@ -47,11 +47,11 @@ redirect_from:
     flex-wrap: wrap;
     gap: 0.45rem 0.85rem;
     margin-top: 0.65rem;
-    font-size: 0.9rem;
+    font-size: 0.84rem;
   }
 
   .lzh-links a {
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .lzh-section {
@@ -60,9 +60,10 @@ redirect_from:
 
   .lzh-section-title {
     margin: 0 0 0.6rem;
-    font-size: 1.08rem;
+    font-size: 1rem;
     line-height: 1.35;
     letter-spacing: 0;
+    font-weight: 600;
     border-bottom: 1px solid var(--line);
     padding-bottom: 0.35rem;
   }
@@ -84,31 +85,32 @@ redirect_from:
 
   .lzh-pub-title {
     margin: 0;
-    font-size: 0.98rem;
-    line-height: 1.38;
+    font-size: 0.9rem;
+    line-height: 1.35;
     letter-spacing: 0;
+    font-weight: 600;
   }
 
   .lzh-authors {
     margin: 0.3rem 0 0;
     color: var(--muted);
-    font-size: 0.84rem;
-    line-height: 1.55;
+    font-size: 0.78rem;
+    line-height: 1.5;
   }
 
   .lzh-pub-venue-full {
     margin: 0.25rem 0 0;
     color: var(--green);
-    font-size: 0.84rem;
+    font-size: 0.8rem;
     line-height: 1.45;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .lzh-pub-legend {
     margin: 0 0 0.6rem;
     color: var(--muted);
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     line-height: 1.45;
   }
 
@@ -117,11 +119,11 @@ redirect_from:
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem 0.65rem;
-    font-size: 0.84rem;
+    font-size: 0.78rem;
   }
 
   .lzh-pub-links a {
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .lzh-pub-links .lzh-github-link {
@@ -136,7 +138,13 @@ redirect_from:
   .lzh-github-stars {
     display: block;
     width: auto;
-    height: 20px;
+    height: 18px;
+  }
+
+  .lzh-pub-metric {
+    color: var(--muted);
+    font-weight: 500;
+    white-space: nowrap;
   }
 
   .lzh-timeline {
@@ -155,15 +163,16 @@ redirect_from:
 
   .lzh-time-item h3 {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     line-height: 1.35;
     letter-spacing: 0;
+    font-weight: 600;
   }
 
   .lzh-time-item p {
     margin: 0.25rem 0 0;
     color: var(--muted);
-    font-size: 0.86rem;
+    font-size: 0.8rem;
     line-height: 1.45;
   }
 
@@ -178,9 +187,9 @@ redirect_from:
       (co-advised by <a href="https://yuanli2333.github.io/">Prof. Li Yuan</a>).
     </p>
     <p class="lzh-lede">
-      My research lies at the intersection of <strong>scientific foundation models</strong>,
-      <strong>molecular and protein LLMs</strong>, <strong>scientific agents</strong>, and
-      <strong>scientific evaluation</strong>, with a focus on models and agentic systems that understand,
+      My research lies at the intersection of scientific foundation models,
+      molecular and protein LLMs, scientific agents, and
+      scientific evaluation, with a focus on models and agentic systems that understand,
       generate, and reason over molecules, proteins, and biological protocols.
     </p>
     <div class="lzh-links">
@@ -233,6 +242,7 @@ redirect_from:
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2402.16445">Paper</a>
             {% include github-repo-link.html repo="PKU-YuanGroup/ProLLaMA" %}
+            <span class="lzh-pub-metric">60K+ downloads</span>
           </div>
         </div>
       </article>
@@ -246,6 +256,7 @@ redirect_from:
             <a href="https://arxiv.org/abs/2505.07889">Paper</a>
             {% include github-repo-link.html repo="YuyangSunshine/bioprotocolbench" %}
             <a href="https://huggingface.co/datasets/BioProBench/BioProBench">Dataset</a>
+            <span class="lzh-pub-metric">100K+ downloads</span>
           </div>
         </div>
       </article>
