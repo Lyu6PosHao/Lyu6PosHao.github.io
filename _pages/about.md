@@ -187,10 +187,8 @@ redirect_from:
       (co-advised by <a href="https://yuanli2333.github.io/">Prof. Li Yuan</a>).
     </p>
     <p class="lzh-lede">
-      My research lies at the intersection of scientific foundation models,
-      molecular and protein LLMs, scientific agents, and
-      scientific evaluation, with a focus on models and agentic systems that understand,
-      generate, and reason over molecules, proteins, and biological protocols.
+      My research focuses on LLMs for biochemistry, including molecular and protein large language models,
+      agents, and evaluation benchmark development.
     </p>
     <div class="lzh-links">
       <a href="https://scholar.google.com/citations?user=lFUR8mQAAAAJ&hl=zh-CN">Google Scholar</a>
