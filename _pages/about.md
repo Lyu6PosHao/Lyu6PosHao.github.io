@@ -229,7 +229,7 @@ redirect_from:
     </p>
     <p class="lzh-lede">
       I build AI systems for scientific discovery along two complementary research directions:
-      <strong>molecular modeling and controllable design</strong>, and
+      <strong>molecular and protein understanding and design</strong>, and
       <strong>dry&ndash;wet closed-loop automated laboratories</strong>.
       Across both directions, I work with multimodal LLMs, LLM mid-training and post-training, and agents.
     </p>
@@ -246,7 +246,7 @@ redirect_from:
     <div data-direction-switcher>
       <div class="lzh-direction-tabs" role="tablist" aria-label="Publication categories">
         <button class="lzh-direction-tab" id="direction-tab-molecular" type="button" role="tab" aria-selected="true" aria-controls="direction-panel-molecular" tabindex="0">
-          Molecular Modeling &amp; Controllable Design
+          Molecular and Protein Understanding and Design
         </button>
         <button class="lzh-direction-tab" id="direction-tab-lab" type="button" role="tab" aria-selected="false" aria-controls="direction-panel-lab" tabindex="-1">
           Dry&ndash;Wet Closed-Loop Automated Laboratories
