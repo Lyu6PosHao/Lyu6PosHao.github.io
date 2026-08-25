@@ -252,7 +252,7 @@ redirect_from:
           Dry&ndash;Wet Closed-Loop Automated Laboratories
         </button>
         <button class="lzh-direction-tab" id="direction-tab-additional" type="button" role="tab" aria-selected="false" aria-controls="direction-panel-additional" tabindex="-1">
-          Earlier &amp; Additional Work
+          Earlier and Additional Work
         </button>
       </div>
 
