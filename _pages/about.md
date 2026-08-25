@@ -12,6 +12,8 @@ redirect_from:
     --ink: #1f2933;
     --muted: #5f6c7b;
     --line: #d9e2ec;
+    --section-blue: #b8cada;
+    --section-green: #b8d1c7;
     --blue: #255f99;
     --green: #2f6f5e;
     color: var(--ink);
@@ -55,6 +57,14 @@ redirect_from:
     padding: 0.85rem 1rem;
     border: 1px solid var(--line);
     border-radius: 6px;
+  }
+
+  .lzh-home > section:nth-of-type(odd) {
+    border-color: var(--section-blue);
+  }
+
+  .lzh-home > section:nth-of-type(even) {
+    border-color: var(--section-green);
   }
 
   .lzh-section-title {
@@ -304,6 +314,20 @@ redirect_from:
         <div class="lzh-pub-list">
       <article class="lzh-pub">
         <div class="lzh-pub-body">
+          <h3 class="lzh-pub-title">Bridging the Gap in Autonomous Science: The Corpus and Benchmark for Biological Protocol Reasoning</h3>
+          <p class="lzh-authors">Yuyang Liu<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Xiancheng Zhang, Jingya Wang, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-pub-venue-full">ICML, 2026</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2505.07889">Paper</a>
+            {% include github-repo-link.html repo="YuyangSunshine/bioprotocolbench" %}
+            <a href="https://huggingface.co/datasets/BioProBench/BioProBench">Dataset</a>
+            <span class="lzh-pub-metric">100K+ downloads</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="lzh-pub">
+        <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">LabEvolver: Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents</h3>
           <p class="lzh-authors">Jingya Wang, Yuyang Gao, <strong>Liuzhenghao Lv</strong>, Yonghong Tian, Yuyang Liu</p>
           <p class="lzh-pub-venue-full">arXiv, 2026</p>
@@ -324,20 +348,6 @@ redirect_from:
             <a href="https://arxiv.org/abs/2603.00876">Paper</a>
             {% include github-repo-link.html repo="YuyangSunshine/bioproagent" %}
             <a href="https://yuyangsunshine.github.io/BioPro-Project/">Project</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="lzh-pub">
-        <div class="lzh-pub-body">
-          <h3 class="lzh-pub-title">Bridging the Gap in Autonomous Science: The Corpus and Benchmark for Biological Protocol Reasoning</h3>
-          <p class="lzh-authors">Yuyang Liu<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Xiancheng Zhang, Jingya Wang, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">ICML, 2026</p>
-          <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2505.07889">Paper</a>
-            {% include github-repo-link.html repo="YuyangSunshine/bioprotocolbench" %}
-            <a href="https://huggingface.co/datasets/BioProBench/BioProBench">Dataset</a>
-            <span class="lzh-pub-metric">100K+ downloads</span>
           </div>
         </div>
       </article>
