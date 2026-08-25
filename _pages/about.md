@@ -68,6 +68,123 @@ redirect_from:
     padding-bottom: 0.35rem;
   }
 
+  .lzh-research-note {
+    margin: 0 0 0.75rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+  .lzh-direction-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .lzh-direction-tab {
+    appearance: none;
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: var(--soft);
+    color: var(--muted);
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.35;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+  }
+
+  .lzh-direction-tab:hover,
+  .lzh-direction-tab:focus-visible {
+    border-color: var(--blue);
+    color: var(--blue);
+  }
+
+  .lzh-direction-tab[aria-selected="true"] {
+    border-color: var(--blue);
+    background: var(--blue);
+    color: #fff;
+  }
+
+  .lzh-direction-panel[hidden] {
+    display: none;
+  }
+
+  .lzh-direction-summary {
+    margin: 0 0 0.7rem;
+    padding: 0.65rem 0.8rem;
+    border-left: 3px solid var(--blue);
+    background: var(--soft);
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+  .lzh-techniques {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+
+  .lzh-technique {
+    padding: 0.65rem 0.75rem;
+    border-top: 3px solid var(--green);
+    border-radius: 6px;
+    background: var(--soft);
+  }
+
+  .lzh-technique h3 {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.35;
+    letter-spacing: 0;
+    font-weight: 600;
+  }
+
+  .lzh-technique p {
+    margin: 0.3rem 0 0;
+    color: var(--muted);
+    font-size: 0.76rem;
+    line-height: 1.45;
+  }
+
+  .lzh-additional-work {
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: var(--soft);
+  }
+
+  .lzh-additional-work summary {
+    padding: 0.65rem 0.8rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .lzh-additional-work[open] summary {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .lzh-additional-work-list {
+    display: grid;
+    gap: 0.7rem;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .lzh-additional-work-item h3 {
+    margin: 0;
+    font-size: 0.84rem;
+    line-height: 1.4;
+    letter-spacing: 0;
+    font-weight: 600;
+  }
+
   .lzh-pub-list {
     display: grid;
     gap: 0.65rem;
@@ -176,6 +293,13 @@ redirect_from:
     line-height: 1.45;
   }
 
+  @media (max-width: 640px) {
+    .lzh-direction-tabs,
+    .lzh-techniques {
+      grid-template-columns: 1fr;
+    }
+  }
+
 </style>
 
 <div class="lzh-home">
@@ -187,8 +311,10 @@ redirect_from:
       (co-advised by <a href="https://yuanli2333.github.io/">Prof. Li Yuan</a>).
     </p>
     <p class="lzh-lede">
-      My research focuses on LLMs for biochemistry, including molecular and protein large language models,
-      agents, and evaluation benchmark development.
+      I build AI systems for scientific discovery along two complementary research directions:
+      <strong>molecular modeling and controllable design</strong>, and
+      <strong>dry&ndash;wet closed-loop automated laboratories</strong>.
+      Across both directions, I work with multimodal LLMs, LLM mid-training and post-training, and agents.
     </p>
     <div class="lzh-links">
       <a href="https://scholar.google.com/citations?user=lFUR8mQAAAAJ&hl=zh-CN">Google Scholar</a>
@@ -198,27 +324,26 @@ redirect_from:
   </section>
 
   <section class="lzh-section">
-    <h2 class="lzh-section-title">Education</h2>
-    <div class="lzh-timeline">
-      <div class="lzh-time-item">
-        <h3>Ph.D. Student, Computer Science, Peking University (Successive Postgraduate and Doctoral Programs)</h3>
-        <p>School of Computer Science · 2025.09 - 2028.06 (expected)</p>
-      </div>
-      <div class="lzh-time-item">
-        <h3>M.Phil. Student, Computer Science, Peking University</h3>
-        <p>School of Electronic and Computer Engineering · 2023.09 - 2025.06</p>
-      </div>
-      <div class="lzh-time-item">
-        <h3>B.Eng., Information Security, Tongji University</h3>
-        <p>School of Electronic and Information Engineering · 2019.09 - 2023.07</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="lzh-section">
-    <h2 class="lzh-section-title">Selected Publications</h2>
+    <h2 class="lzh-section-title">Research Directions &amp; Selected Publications</h2>
+    <p class="lzh-research-note">
+      My research is organized by the scientific problems I pursue. Switch between the two directions to explore the corresponding work.
+    </p>
     <p class="lzh-pub-legend"><sup>&dagger;</sup> Equal contribution.</p>
-    <div class="lzh-pub-list">
+    <div data-direction-switcher>
+      <div class="lzh-direction-tabs" role="tablist" aria-label="Research directions">
+        <button class="lzh-direction-tab" id="direction-tab-molecular" type="button" role="tab" aria-selected="true" aria-controls="direction-panel-molecular" tabindex="0">
+          Molecular Modeling &amp; Controllable Design
+        </button>
+        <button class="lzh-direction-tab" id="direction-tab-lab" type="button" role="tab" aria-selected="false" aria-controls="direction-panel-lab" tabindex="-1">
+          Dry&ndash;Wet Closed-Loop Automated Laboratories
+        </button>
+      </div>
+
+      <div class="lzh-direction-panel" id="direction-panel-molecular" role="tabpanel" aria-labelledby="direction-tab-molecular">
+        <p class="lzh-direction-summary">
+          Developing models that connect molecular and protein representations with language, evaluate their scientific reliability, and enable controllable biological design.
+        </p>
+        <div class="lzh-pub-list">
       <article class="lzh-pub">
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding</h3>
@@ -247,26 +372,43 @@ redirect_from:
 
       <article class="lzh-pub">
         <div class="lzh-pub-body">
-          <h3 class="lzh-pub-title">Bridging the Gap in Autonomous Science: The Corpus and Benchmark for Biological Protocol Reasoning</h3>
-          <p class="lzh-authors">Yuyang Liu<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Xiancheng Zhang, Jingya Wang, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">ICML, 2026</p>
+          <h3 class="lzh-pub-title">How to Detect and Defeat Molecular Mirage: A Metric-Driven Benchmark for Hallucination in LLM-based Molecular Comprehension</h3>
+          <p class="lzh-authors">Hao Li, <strong>Liuzhenghao Lv</strong>, He Cao, Zijing Liu, Zhiyuan Yan, Yu Wang, Yonghong Tian, Yu Li, Li Yuan</p>
+          <p class="lzh-pub-venue-full">NeurIPS AI for Science Workshop, 2025</p>
           <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2505.07889">Paper</a>
-            {% include github-repo-link.html repo="YuyangSunshine/bioprotocolbench" %}
-            <a href="https://huggingface.co/datasets/BioProBench/BioProBench">Dataset</a>
-            <span class="lzh-pub-metric">100K+ downloads</span>
+            <a href="https://arxiv.org/abs/2504.12314">Paper</a>
           </div>
         </div>
       </article>
 
       <article class="lzh-pub">
         <div class="lzh-pub-body">
-          <h3 class="lzh-pub-title">Machine Mindset: An MBTI Exploration of Large Language Models</h3>
-          <p class="lzh-authors">Jiaxi Cui<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Jing Wen, Rongsheng Wang, Jing Tang, Yonghong Tian, Li Yuan</p>
-          <p class="lzh-pub-venue-full">arXiv, 2023</p>
+          <h3 class="lzh-pub-title">TaxDiff: Taxonomic-Guided Diffusion Model for Protein Sequence Generation</h3>
+          <p class="lzh-authors">Zongying Lin<sup>&dagger;</sup>, Hao Li<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong>, Yu Wang, Bin Lin, Junwu Zhang, Zijun Chen, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-pub-venue-full">Science China Information Sciences, 2025</p>
           <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2312.12999">Paper</a>
-            {% include github-repo-link.html repo="PKU-YuanGroup/Machine-Mindset" %}
+            <a href="https://arxiv.org/abs/2402.17156">Paper</a>
+            {% include github-repo-link.html repo="PKU-YuanGroup/TaxDiff" %}
+          </div>
+        </div>
+      </article>
+        </div>
+      </div>
+
+      <div class="lzh-direction-panel" id="direction-panel-lab" role="tabpanel" aria-labelledby="direction-tab-lab" hidden>
+        <p class="lzh-direction-summary">
+          Building grounded agents that connect computational reasoning with physical experiments through protocol understanding, constrained planning, multimodal feedback, and safe closed-loop execution.
+        </p>
+        <div class="lzh-pub-list">
+      <article class="lzh-pub">
+        <div class="lzh-pub-body">
+          <h3 class="lzh-pub-title">LabEvolver: Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents</h3>
+          <p class="lzh-authors">Jingya Wang, Yuyang Gao, <strong>Liuzhenghao Lv</strong>, Yonghong Tian, Yuyang Liu</p>
+          <p class="lzh-pub-venue-full">arXiv, 2026</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2607.27690">Paper</a>
+            {% include github-repo-link.html repo="AndyGao6186/LabEvolver" %}
+            <a href="https://andygao6186.github.io/LabEvolver/">Project</a>
           </div>
         </div>
       </article>
@@ -286,15 +428,85 @@ redirect_from:
 
       <article class="lzh-pub">
         <div class="lzh-pub-body">
-          <h3 class="lzh-pub-title">Optimal ANN-SNN Conversion with Group Neurons</h3>
+          <h3 class="lzh-pub-title">Bridging the Gap in Autonomous Science: The Corpus and Benchmark for Biological Protocol Reasoning</h3>
+          <p class="lzh-authors">Yuyang Liu<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Xiancheng Zhang, Jingya Wang, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-pub-venue-full">ICML, 2026</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2505.07889">Paper</a>
+            {% include github-repo-link.html repo="YuyangSunshine/bioprotocolbench" %}
+            <a href="https://huggingface.co/datasets/BioProBench/BioProBench">Dataset</a>
+            <span class="lzh-pub-metric">100K+ downloads</span>
+          </div>
+        </div>
+      </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lzh-section">
+    <h2 class="lzh-section-title">Core Techniques</h2>
+    <p class="lzh-research-note">
+      These are shared methodological capabilities that cut across both research directions.
+    </p>
+    <div class="lzh-techniques">
+      <div class="lzh-technique">
+        <h3>Multimodal LLMs</h3>
+        <p>Aligning language with molecular representations, scientific documents, images, sensor signals, and embodied laboratory states.</p>
+      </div>
+      <div class="lzh-technique">
+        <h3>LLM Mid-Training &amp; Post-Training</h3>
+        <p>Domain-adaptive continued training, instruction tuning, preference optimization, and reliability-oriented alignment for scientific tasks.</p>
+      </div>
+      <div class="lzh-technique">
+        <h3>Agents &amp; Tool Use</h3>
+        <p>Planning, tool orchestration, memory, safety constraints, and feedback-grounded execution in digital and physical environments.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lzh-section">
+    <h2 class="lzh-section-title">Earlier &amp; Additional Work</h2>
+    <details class="lzh-additional-work">
+      <summary>View publications beyond the two current research directions</summary>
+      <div class="lzh-additional-work-list">
+        <article class="lzh-additional-work-item">
+          <h3>Machine Mindset: An MBTI Exploration of Large Language Models</h3>
+          <p class="lzh-authors">Jiaxi Cui<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Jing Wen, Rongsheng Wang, Jing Tang, Yonghong Tian, Li Yuan</p>
+          <p class="lzh-pub-venue-full">arXiv, 2023</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2312.12999">Paper</a>
+            {% include github-repo-link.html repo="PKU-YuanGroup/Machine-Mindset" %}
+          </div>
+        </article>
+        <article class="lzh-additional-work-item">
+          <h3>Optimal ANN-SNN Conversion with Group Neurons</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Wei Fang, Li Yuan, Yonghong Tian</p>
           <p class="lzh-pub-venue-full">ICASSP, 2024</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2402.19061">Paper</a>
             {% include github-repo-link.html repo="Lyu6PosHao/ANN2SNN_GN" %}
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
+    </details>
+  </section>
+
+  <section class="lzh-section">
+    <h2 class="lzh-section-title">Education</h2>
+    <div class="lzh-timeline">
+      <div class="lzh-time-item">
+        <h3>Ph.D. Student, Computer Science, Peking University (Successive Postgraduate and Doctoral Programs)</h3>
+        <p>School of Computer Science · 2025.09 - 2028.06 (expected)</p>
+      </div>
+      <div class="lzh-time-item">
+        <h3>M.Phil. Student, Computer Science, Peking University</h3>
+        <p>School of Electronic and Computer Engineering · 2023.09 - 2025.06</p>
+      </div>
+      <div class="lzh-time-item">
+        <h3>B.Eng., Information Security, Tongji University</h3>
+        <p>School of Electronic and Information Engineering · 2019.09 - 2023.07</p>
+      </div>
     </div>
   </section>
 
@@ -307,7 +519,7 @@ redirect_from:
       </div>
       <div class="lzh-time-item">
         <h3>Main Contributor, AI for Science Platform, Peking University</h3>
-        <p>Beijing / Shenzhen, China · 2025 - Present. Contributing to digital laboratory workflows and experimental-protocol agents for scientific automation.</p>
+        <p>Beijing / Shenzhen, China · 2025 - Present. Developing grounded agents and dry&ndash;wet closed-loop workflows for automated scientific experimentation.</p>
       </div>
       <!-- <div class="lzh-time-item">
         <h3>Research Intern, AI Search Group, Baidu</h3>
@@ -337,3 +549,40 @@ redirect_from:
     </div>
   </section>
 </div>
+
+<script>
+  (function () {
+    var switcher = document.querySelector('[data-direction-switcher]');
+    if (!switcher) return;
+
+    var tabs = Array.prototype.slice.call(switcher.querySelectorAll('[role="tab"]'));
+    var panels = Array.prototype.slice.call(switcher.querySelectorAll('[role="tabpanel"]'));
+
+    function activateTab(tab, moveFocus) {
+      tabs.forEach(function (item) {
+        var selected = item === tab;
+        item.setAttribute('aria-selected', selected ? 'true' : 'false');
+        item.setAttribute('tabindex', selected ? '0' : '-1');
+      });
+
+      panels.forEach(function (panel) {
+        panel.hidden = panel.id !== tab.getAttribute('aria-controls');
+      });
+
+      if (moveFocus) tab.focus();
+    }
+
+    tabs.forEach(function (tab, index) {
+      tab.addEventListener('click', function () {
+        activateTab(tab, false);
+      });
+
+      tab.addEventListener('keydown', function (event) {
+        if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+        event.preventDefault();
+        var offset = event.key === 'ArrowRight' ? 1 : -1;
+        activateTab(tabs[(index + offset + tabs.length) % tabs.length], true);
+      });
+    });
+  }());
+</script>
