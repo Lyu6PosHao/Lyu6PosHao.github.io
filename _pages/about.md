@@ -12,19 +12,14 @@ redirect_from:
     --ink: #1f2933;
     --muted: #5f6c7b;
     --line: #d9e2ec;
-    --soft: #f7f9fb;
     --blue: #255f99;
     --green: #2f6f5e;
-    --gold: #8a641d;
     color: var(--ink);
   }
 
   .lzh-hero {
-    padding: 0.9rem 1rem;
-    border: 1px solid var(--line);
-    border-left: 5px solid var(--blue);
-    border-radius: 8px;
-    background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%);
+    padding: 0 0 1rem;
+    border-bottom: 1px solid var(--line);
     margin-bottom: 1rem;
   }
 
@@ -71,20 +66,17 @@ redirect_from:
   .lzh-direction-tabs {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.25rem;
+    gap: 1rem;
     margin-bottom: 0.75rem;
-    padding: 0.25rem;
-    border: 1px solid var(--line);
-    border-radius: 7px;
-    background: var(--soft);
+    border-bottom: 1px solid var(--line);
   }
 
   .lzh-direction-tab {
     appearance: none;
     width: 100%;
-    padding: 0.55rem 0.7rem;
+    padding: 0.45rem 0 0.55rem;
     border: 0;
-    border-radius: 5px;
+    border-radius: 0;
     background: transparent;
     color: var(--muted);
     font: inherit;
@@ -102,9 +94,8 @@ redirect_from:
   }
 
   .lzh-direction-tab[aria-selected="true"] {
-    background: #fff;
     color: var(--ink);
-    box-shadow: inset 0 -2px 0 var(--blue), 0 0 0 1px var(--line);
+    box-shadow: inset 0 -2px 0 var(--blue);
   }
 
   .lzh-direction-panel[hidden] {
@@ -112,27 +103,30 @@ redirect_from:
   }
 
   .lzh-additional-work {
-    border: 1px solid var(--line);
-    border-radius: 7px;
-    background: var(--soft);
+    border: 0;
   }
 
   .lzh-additional-work summary {
-    padding: 0.65rem 0.8rem;
+    padding: 0.45rem 0 0.6rem;
+    border-bottom: 1px solid var(--line);
     color: var(--muted);
     font-size: 0.82rem;
     font-weight: 600;
     cursor: pointer;
   }
 
-  .lzh-additional-work[open] summary {
-    border-bottom: 1px solid var(--line);
-  }
-
   .lzh-additional-work-list {
     display: grid;
-    gap: 0.7rem;
-    padding: 0.75rem 0.85rem;
+    gap: 0;
+    padding: 0;
+  }
+
+  .lzh-additional-work-item {
+    padding: 0.7rem 0;
+  }
+
+  .lzh-additional-work-item + .lzh-additional-work-item {
+    border-top: 1px solid var(--line);
   }
 
   .lzh-additional-work-item h3 {
@@ -145,17 +139,19 @@ redirect_from:
 
   .lzh-pub-list {
     display: grid;
-    gap: 0.65rem;
+    gap: 0;
   }
 
   .lzh-pub {
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    background: #fff;
+    border: 0;
+  }
+
+  .lzh-pub + .lzh-pub {
+    border-top: 1px solid var(--line);
   }
 
   .lzh-pub-body {
-    padding: 0.7rem 0.85rem;
+    padding: 0.7rem 0;
   }
 
   .lzh-pub-title {
@@ -201,21 +197,6 @@ redirect_from:
     font-weight: 500;
   }
 
-  .lzh-pub-links .lzh-github-link {
-    display: inline-flex;
-    align-items: center;
-  }
-
-  .lzh-pub-links .lzh-github-link:hover {
-    text-decoration: none;
-  }
-
-  .lzh-github-stars {
-    display: block;
-    width: auto;
-    height: 18px;
-  }
-
   .lzh-pub-metric {
     color: var(--muted);
     font-weight: 500;
@@ -223,17 +204,17 @@ redirect_from:
   }
 
   .lzh-timeline {
-    border-left: 2px solid var(--line);
-    margin-left: 0.35rem;
-    padding-left: 0.9rem;
+    margin: 0;
+    padding: 0;
   }
 
   .lzh-time-item {
-    margin: 0 0 0.65rem;
+    margin: 0;
+    padding: 0.6rem 0;
   }
 
-  .lzh-time-item:last-child {
-    margin-bottom: 0;
+  .lzh-time-item + .lzh-time-item {
+    border-top: 1px solid var(--line);
   }
 
   .lzh-time-item h3 {
@@ -324,7 +305,7 @@ redirect_from:
       <article class="lzh-pub">
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">How to Detect and Defeat Molecular Mirage: A Metric-Driven Benchmark for Hallucination in LLM-based Molecular Comprehension</h3>
-          <p class="lzh-authors">Hao Li, <strong>Liuzhenghao Lv</strong>, He Cao, Zijing Liu, Zhiyuan Yan, Yu Wang, Yonghong Tian, Yu Li, Li Yuan</p>
+          <p class="lzh-authors">Hao Li<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, He Cao, Zijing Liu, Zhiyuan Yan, Yu Wang, Yonghong Tian, Yu Li, Li Yuan</p>
           <p class="lzh-pub-venue-full">NeurIPS AI for Science Workshop, 2025</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2504.12314">Paper</a>
