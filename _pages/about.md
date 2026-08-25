@@ -68,27 +68,24 @@ redirect_from:
     padding-bottom: 0.35rem;
   }
 
-  .lzh-research-note {
-    margin: 0 0 0.75rem;
-    color: var(--muted);
-    font-size: 0.82rem;
-    line-height: 1.55;
-  }
-
   .lzh-direction-tabs {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.45rem;
+    gap: 0.25rem;
     margin-bottom: 0.75rem;
+    padding: 0.25rem;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: var(--soft);
   }
 
   .lzh-direction-tab {
     appearance: none;
     width: 100%;
-    padding: 0.6rem 0.75rem;
-    border: 1px solid var(--line);
-    border-radius: 7px;
-    background: var(--soft);
+    padding: 0.55rem 0.7rem;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
     color: var(--muted);
     font: inherit;
     font-size: 0.82rem;
@@ -101,56 +98,17 @@ redirect_from:
 
   .lzh-direction-tab:hover,
   .lzh-direction-tab:focus-visible {
-    border-color: var(--blue);
     color: var(--blue);
   }
 
   .lzh-direction-tab[aria-selected="true"] {
-    border-color: var(--blue);
-    background: var(--blue);
-    color: #fff;
+    background: #fff;
+    color: var(--ink);
+    box-shadow: inset 0 -2px 0 var(--blue), 0 0 0 1px var(--line);
   }
 
   .lzh-direction-panel[hidden] {
     display: none;
-  }
-
-  .lzh-direction-summary {
-    margin: 0 0 0.7rem;
-    padding: 0.65rem 0.8rem;
-    border-left: 3px solid var(--blue);
-    background: var(--soft);
-    color: var(--muted);
-    font-size: 0.82rem;
-    line-height: 1.55;
-  }
-
-  .lzh-techniques {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.55rem;
-  }
-
-  .lzh-technique {
-    padding: 0.65rem 0.75rem;
-    border-top: 3px solid var(--green);
-    border-radius: 6px;
-    background: var(--soft);
-  }
-
-  .lzh-technique h3 {
-    margin: 0;
-    font-size: 0.82rem;
-    line-height: 1.35;
-    letter-spacing: 0;
-    font-weight: 600;
-  }
-
-  .lzh-technique p {
-    margin: 0.3rem 0 0;
-    color: var(--muted);
-    font-size: 0.76rem;
-    line-height: 1.45;
   }
 
   .lzh-additional-work {
@@ -294,8 +252,7 @@ redirect_from:
   }
 
   @media (max-width: 640px) {
-    .lzh-direction-tabs,
-    .lzh-techniques {
+    .lzh-direction-tabs {
       grid-template-columns: 1fr;
     }
   }
@@ -325,9 +282,6 @@ redirect_from:
 
   <section class="lzh-section">
     <h2 class="lzh-section-title">Research Directions &amp; Selected Publications</h2>
-    <p class="lzh-research-note">
-      My research is organized by the scientific problems I pursue. Switch between the two directions to explore the corresponding work.
-    </p>
     <p class="lzh-pub-legend"><sup>&dagger;</sup> Equal contribution.</p>
     <div data-direction-switcher>
       <div class="lzh-direction-tabs" role="tablist" aria-label="Research directions">
@@ -340,9 +294,6 @@ redirect_from:
       </div>
 
       <div class="lzh-direction-panel" id="direction-panel-molecular" role="tabpanel" aria-labelledby="direction-tab-molecular">
-        <p class="lzh-direction-summary">
-          Developing models that connect molecular and protein representations with language, evaluate their scientific reliability, and enable controllable biological design.
-        </p>
         <div class="lzh-pub-list">
       <article class="lzh-pub">
         <div class="lzh-pub-body">
@@ -396,9 +347,6 @@ redirect_from:
       </div>
 
       <div class="lzh-direction-panel" id="direction-panel-lab" role="tabpanel" aria-labelledby="direction-tab-lab" hidden>
-        <p class="lzh-direction-summary">
-          Building grounded agents that connect computational reasoning with physical experiments through protocol understanding, constrained planning, multimodal feedback, and safe closed-loop execution.
-        </p>
         <div class="lzh-pub-list">
       <article class="lzh-pub">
         <div class="lzh-pub-body">
@@ -440,27 +388,6 @@ redirect_from:
         </div>
       </article>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="lzh-section">
-    <h2 class="lzh-section-title">Core Techniques</h2>
-    <p class="lzh-research-note">
-      These are shared methodological capabilities that cut across both research directions.
-    </p>
-    <div class="lzh-techniques">
-      <div class="lzh-technique">
-        <h3>Multimodal LLMs</h3>
-        <p>Aligning language with molecular representations, scientific documents, images, sensor signals, and embodied laboratory states.</p>
-      </div>
-      <div class="lzh-technique">
-        <h3>LLM Mid-Training &amp; Post-Training</h3>
-        <p>Domain-adaptive continued training, instruction tuning, preference optimization, and reliability-oriented alignment for scientific tasks.</p>
-      </div>
-      <div class="lzh-technique">
-        <h3>Agents &amp; Tool Use</h3>
-        <p>Planning, tool orchestration, memory, safety constraints, and feedback-grounded execution in digital and physical environments.</p>
       </div>
     </div>
   </section>
