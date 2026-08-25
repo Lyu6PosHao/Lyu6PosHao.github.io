@@ -18,8 +18,9 @@ redirect_from:
   }
 
   .lzh-hero {
-    padding: 0 0 1rem;
-    border-bottom: 1px solid var(--line);
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
     margin-bottom: 1rem;
   }
 
@@ -50,7 +51,10 @@ redirect_from:
   }
 
   .lzh-section {
-    margin-top: 1.15rem;
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
   }
 
   .lzh-section-title {
@@ -65,7 +69,7 @@ redirect_from:
 
   .lzh-direction-tabs {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
     margin-bottom: 0.75rem;
     border-bottom: 1px solid var(--line);
@@ -100,41 +104,6 @@ redirect_from:
 
   .lzh-direction-panel[hidden] {
     display: none;
-  }
-
-  .lzh-additional-work {
-    border: 0;
-  }
-
-  .lzh-additional-work summary {
-    padding: 0.45rem 0 0.6rem;
-    border-bottom: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 0.82rem;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  .lzh-additional-work-list {
-    display: grid;
-    gap: 0;
-    padding: 0;
-  }
-
-  .lzh-additional-work-item {
-    padding: 0.7rem 0;
-  }
-
-  .lzh-additional-work-item + .lzh-additional-work-item {
-    border-top: 1px solid var(--line);
-  }
-
-  .lzh-additional-work-item h3 {
-    margin: 0;
-    font-size: 0.84rem;
-    line-height: 1.4;
-    letter-spacing: 0;
-    font-weight: 600;
   }
 
   .lzh-pub-list {
@@ -181,7 +150,7 @@ redirect_from:
   .lzh-pub-legend {
     margin: 0 0 0.6rem;
     color: var(--muted);
-    font-size: 0.78rem;
+    font-size: 0.68rem;
     line-height: 1.45;
   }
 
@@ -262,15 +231,18 @@ redirect_from:
   </section>
 
   <section class="lzh-section">
-    <h2 class="lzh-section-title">Research Directions &amp; Selected Publications</h2>
+    <h2 class="lzh-section-title">Selected Publications</h2>
     <p class="lzh-pub-legend"><sup>&dagger;</sup> Equal contribution.</p>
     <div data-direction-switcher>
-      <div class="lzh-direction-tabs" role="tablist" aria-label="Research directions">
+      <div class="lzh-direction-tabs" role="tablist" aria-label="Publication categories">
         <button class="lzh-direction-tab" id="direction-tab-molecular" type="button" role="tab" aria-selected="true" aria-controls="direction-panel-molecular" tabindex="0">
           Molecular Modeling &amp; Controllable Design
         </button>
         <button class="lzh-direction-tab" id="direction-tab-lab" type="button" role="tab" aria-selected="false" aria-controls="direction-panel-lab" tabindex="-1">
           Dry&ndash;Wet Closed-Loop Automated Laboratories
+        </button>
+        <button class="lzh-direction-tab" id="direction-tab-additional" type="button" role="tab" aria-selected="false" aria-controls="direction-panel-additional" tabindex="-1">
+          Earlier &amp; Additional Work
         </button>
       </div>
 
@@ -371,34 +343,34 @@ redirect_from:
       </article>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="lzh-section">
-    <h2 class="lzh-section-title">Earlier &amp; Additional Work</h2>
-    <details class="lzh-additional-work">
-      <summary>View publications beyond the two current research directions</summary>
-      <div class="lzh-additional-work-list">
-        <article class="lzh-additional-work-item">
-          <h3>Machine Mindset: An MBTI Exploration of Large Language Models</h3>
+      <div class="lzh-direction-panel" id="direction-panel-additional" role="tabpanel" aria-labelledby="direction-tab-additional" hidden>
+        <div class="lzh-pub-list">
+        <article class="lzh-pub">
+          <div class="lzh-pub-body">
+          <h3 class="lzh-pub-title">Machine Mindset: An MBTI Exploration of Large Language Models</h3>
           <p class="lzh-authors">Jiaxi Cui<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Jing Wen, Rongsheng Wang, Jing Tang, Yonghong Tian, Li Yuan</p>
           <p class="lzh-pub-venue-full">arXiv, 2023</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2312.12999">Paper</a>
             {% include github-repo-link.html repo="PKU-YuanGroup/Machine-Mindset" %}
           </div>
+          </div>
         </article>
-        <article class="lzh-additional-work-item">
-          <h3>Optimal ANN-SNN Conversion with Group Neurons</h3>
+        <article class="lzh-pub">
+          <div class="lzh-pub-body">
+          <h3 class="lzh-pub-title">Optimal ANN-SNN Conversion with Group Neurons</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Wei Fang, Li Yuan, Yonghong Tian</p>
           <p class="lzh-pub-venue-full">ICASSP, 2024</p>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2402.19061">Paper</a>
             {% include github-repo-link.html repo="Lyu6PosHao/ANN2SNN_GN" %}
           </div>
+          </div>
         </article>
+        </div>
       </div>
-    </details>
+    </div>
   </section>
 
   <section class="lzh-section">
