@@ -297,6 +297,7 @@ redirect_from:
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2402.16445">Paper</a>
             {% include github-repo-link.html repo="PKU-YuanGroup/ProLLaMA" %}
+            <a href="https://huggingface.co/collections/GreatCaptainNemo/prollama">Weights</a>
             <span class="lzh-pub-metric">60K+ downloads</span>
           </div>
         </div>
