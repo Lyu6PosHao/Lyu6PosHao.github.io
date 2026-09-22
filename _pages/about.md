@@ -311,7 +311,7 @@ redirect_from:
           <h3 class="lzh-pub-title">Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Hao Li<sup>&dagger;</sup>, Yu Wang, Zijun Chen, Zhiyuan Yan, Zongying Lin, Yuyang Liu, Li Yuan, Yonghong Tian</p>
           <p class="lzh-pub-venue-full">Nature Communications, 2026</p>
-          <p class="lzh-pub-highlight"><strong>Editors&rsquo; Highlight</strong> &mdash; Selected by the editors of <em>Nature Communications</em> for the <em>Materials science and chemistry</em> collection.</p>
+          <p class="lzh-pub-highlight"><strong>Selected as Editors&rsquo; Highlight</strong> &mdash; one of the 50 best papers recently published in materials science and chemistry.</p>
           <details class="lzh-highlight-evidence">
             <summary>View collection screenshots</summary>
             <figure>
