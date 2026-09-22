@@ -164,6 +164,54 @@ redirect_from:
     line-height: 1.45;
   }
 
+  .lzh-pub-highlight {
+    margin: 0.55rem 0 0;
+    padding: 0.5rem 0.7rem;
+    border-left: 3px solid var(--green);
+    background: #f2f7f5;
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  .lzh-pub-highlight strong {
+    color: var(--green);
+  }
+
+  .lzh-highlight-evidence {
+    margin-top: 0.35rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .lzh-highlight-evidence summary {
+    color: var(--blue);
+    cursor: pointer;
+  }
+
+  .lzh-highlight-evidence summary:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 3px;
+  }
+
+  .lzh-highlight-evidence figure {
+    display: block;
+    margin: 0.65rem 0;
+  }
+
+  .lzh-highlight-evidence img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .lzh-highlight-evidence figcaption {
+    margin-top: 0.25rem;
+    color: var(--muted);
+    font-size: 0.7rem;
+  }
+
   .lzh-pub-links {
     margin-top: 0.4rem;
     display: flex;
@@ -263,6 +311,22 @@ redirect_from:
           <h3 class="lzh-pub-title">Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Hao Li<sup>&dagger;</sup>, Yu Wang, Zijun Chen, Zhiyuan Yan, Zongying Lin, Yuyang Liu, Li Yuan, Yonghong Tian</p>
           <p class="lzh-pub-venue-full">Nature Communications, 2026</p>
+          <p class="lzh-pub-highlight"><strong>Editors&rsquo; Highlight</strong> &mdash; Selected by the editors of <em>Nature Communications</em> for the <em>Materials science and chemistry</em> collection.</p>
+          <details class="lzh-highlight-evidence">
+            <summary>View collection screenshots</summary>
+            <figure>
+              <a href="{{ '/images/hme/nature-communications-highlight-collection.png' | relative_url }}">
+                <img src="{{ '/images/hme/nature-communications-highlight-collection.png' | relative_url }}" alt="Nature Communications Materials science and chemistry collection overview" width="2900" height="1144" loading="lazy">
+              </a>
+              <figcaption>Nature Communications &mdash; Materials science and chemistry collection.</figcaption>
+            </figure>
+            <figure>
+              <a href="{{ '/images/hme/nature-communications-highlight-listing.png' | relative_url }}">
+                <img src="{{ '/images/hme/nature-communications-highlight-listing.png' | relative_url }}" alt="Collection listing featuring Navigating chemical-linguistic sharing space with heterogeneous molecular encoding by Liuzhenghao Lv and colleagues" width="2906" height="1118" loading="lazy">
+              </a>
+              <figcaption>HME featured in the collection. Select an image to view it at full size.</figcaption>
+            </figure>
+          </details>
           <div class="lzh-pub-links">
             <a href="https://arxiv.org/abs/2412.20888">Paper</a>
             {% include github-repo-link.html repo="Lyu6PosHao/HME" %}
