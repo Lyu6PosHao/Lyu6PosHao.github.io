@@ -310,7 +310,7 @@ redirect_from:
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">RipplePLM: Structural and Property Decoupling for Protein Mutation Effect Generation</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Yuyang Liu, Yuyang Gao, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">Accepted, 2026</p>
+          <p class="lzh-pub-venue-full">NeurIPS, 2026</p>
         </div>
       </article>
 
