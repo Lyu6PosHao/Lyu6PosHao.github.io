@@ -311,6 +311,11 @@ redirect_from:
           <h3 class="lzh-pub-title">RipplePLM: Structural and Property Decoupling for Protein Mutation Effect Generation</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Yuyang Liu, Yuyang Gao, Li Yuan, Yonghong Tian</p>
           <p class="lzh-pub-venue-full">NeurIPS, 2026</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2610.01891">Paper</a>
+            {% include github-repo-link.html repo="Lyu6PosHao/RipplePLM" %}
+            <a href="https://huggingface.co/datasets/GreatCaptainNemo/RipplePLM-data">Dataset</a>
+          </div>
         </div>
       </article>
 
