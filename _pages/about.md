@@ -495,13 +495,13 @@ redirect_from:
     <h2 class="lzh-section-title">Awards</h2>
     <div class="lzh-timeline">
       <div class="lzh-time-item">
-        <p><span lang="zh">北京大学优秀科研奖</span> · 2024</p>
+        <p>Outstanding Research Award, Peking University · 2024</p>
       </div>
       <div class="lzh-time-item">
-        <p><span lang="zh">北京大学三好学生</span> · 2026</p>
+        <p>Merit Student, Peking University · 2026</p>
       </div>
       <div class="lzh-time-item">
-        <p><span lang="zh">北京大学廖凯原奖学金</span> Leo KoGuan Scholarship · 2026</p>
+        <p>Leo KoGuan Scholarship, Peking University · 2026</p>
       </div>
     </div>
   </section>
