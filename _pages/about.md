@@ -12,23 +12,19 @@ redirect_from:
     --ink: #1f2933;
     --muted: #5f6c7b;
     --line: #d9e2ec;
-    --section-blue: #b8cada;
-    --section-green: #b8d1c7;
     --blue: #255f99;
     --green: #2f6f5e;
     color: var(--ink);
   }
 
   .lzh-hero {
-    padding: 0.9rem 1rem;
-    border: 1px solid var(--line);
-    border-radius: 6px;
+    padding: 0;
     margin-bottom: 1rem;
   }
 
   .lzh-name {
     margin: 0 0 0.35rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.2;
     letter-spacing: 0;
   }
@@ -36,8 +32,8 @@ redirect_from:
   .lzh-lede {
     margin: 0.4rem 0 0;
     color: var(--muted);
-    font-size: 0.9rem;
-    line-height: 1.55;
+    font-size: 0.8rem;
+    line-height: 1.4;
   }
 
   .lzh-links {
@@ -45,7 +41,7 @@ redirect_from:
     flex-wrap: wrap;
     gap: 0.45rem 0.85rem;
     margin-top: 0.65rem;
-    font-size: 0.84rem;
+    font-size: 0.76rem;
   }
 
   .lzh-links a {
@@ -53,27 +49,17 @@ redirect_from:
   }
 
   .lzh-section {
-    margin-top: 1rem;
-    padding: 0.85rem 1rem;
-    border: 1px solid var(--line);
-    border-radius: 6px;
-  }
-
-  .lzh-home > section:nth-of-type(odd) {
-    border-color: var(--section-blue);
-  }
-
-  .lzh-home > section:nth-of-type(even) {
-    border-color: var(--section-green);
+    margin-top: 1.8rem;
+    padding: 0;
   }
 
   .lzh-section-title {
     margin: 0 0 0.6rem;
-    font-size: 1rem;
-    line-height: 1.35;
+    font-size: 0.9rem;
+    line-height: 1.25;
     letter-spacing: 0;
     font-weight: 600;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 0;
     padding-bottom: 0.35rem;
   }
 
@@ -82,7 +68,7 @@ redirect_from:
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
     margin-bottom: 0.75rem;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 0;
   }
 
   .lzh-direction-tab {
@@ -94,9 +80,9 @@ redirect_from:
     background: transparent;
     color: var(--muted);
     font: inherit;
-    font-size: 0.82rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    line-height: 1.35;
+    line-height: 1.25;
     text-align: left;
     cursor: pointer;
     transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
@@ -118,41 +104,37 @@ redirect_from:
 
   .lzh-pub-list {
     display: grid;
-    gap: 0;
+    gap: 1.8rem;
   }
 
   .lzh-pub {
     border: 0;
   }
 
-  .lzh-pub + .lzh-pub {
-    border-top: 1px solid var(--line);
-  }
-
   .lzh-pub-body {
-    padding: 0.7rem 0;
+    padding: 0;
   }
 
   .lzh-pub-title {
     margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.35;
+    font-size: 0.8rem;
+    line-height: 1.25;
     letter-spacing: 0;
     font-weight: 600;
   }
 
   .lzh-authors {
-    margin: 0.3rem 0 0;
+    margin: 0.15rem 0 0;
     color: var(--muted);
-    font-size: 0.78rem;
-    line-height: 1.5;
+    font-size: 0.72rem;
+    line-height: 1.3;
   }
 
   .lzh-pub-venue-full {
-    margin: 0.25rem 0 0;
+    margin: 0.12rem 0 0;
     color: var(--green);
-    font-size: 0.8rem;
-    line-height: 1.45;
+    font-size: 0.73rem;
+    line-height: 1.3;
     font-style: italic;
     font-weight: 500;
   }
@@ -161,16 +143,16 @@ redirect_from:
     margin: 0 0 0.6rem;
     color: var(--muted);
     font-size: 0.68rem;
-    line-height: 1.45;
+    line-height: 1.3;
   }
 
   .lzh-pub-highlight {
-    margin: 0.55rem 0 0;
-    padding: 0.5rem 0.7rem;
-    border-left: 3px solid var(--green);
-    background: #f2f7f5;
-    font-size: 0.78rem;
-    line-height: 1.5;
+    margin: 0.25rem 0 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font-size: 0.72rem;
+    line-height: 1.3;
   }
 
   .lzh-pub-highlight strong {
@@ -179,8 +161,8 @@ redirect_from:
 
   .lzh-highlight-evidence {
     margin-top: 0.35rem;
-    font-size: 0.75rem;
-    line-height: 1.5;
+    font-size: 0.7rem;
+    line-height: 1.3;
   }
 
   .lzh-highlight-evidence summary {
@@ -213,11 +195,11 @@ redirect_from:
   }
 
   .lzh-pub-links {
-    margin-top: 0.4rem;
+    margin-top: 0.2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem 0.65rem;
-    font-size: 0.78rem;
+    font-size: 0.72rem;
   }
 
   .lzh-pub-links a {
@@ -237,26 +219,26 @@ redirect_from:
 
   .lzh-time-item {
     margin: 0;
-    padding: 0.6rem 0;
+    padding: 0;
   }
 
   .lzh-time-item + .lzh-time-item {
-    border-top: 1px solid var(--line);
+    margin-top: 1.5rem;
   }
 
   .lzh-time-item h3 {
     margin: 0;
-    font-size: 0.88rem;
-    line-height: 1.35;
+    font-size: 0.8rem;
+    line-height: 1.25;
     letter-spacing: 0;
     font-weight: 600;
   }
 
   .lzh-time-item p {
-    margin: 0.25rem 0 0;
+    margin: 0.12rem 0 0;
     color: var(--muted);
-    font-size: 0.8rem;
-    line-height: 1.45;
+    font-size: 0.73rem;
+    line-height: 1.3;
   }
 
   @media (max-width: 640px) {
