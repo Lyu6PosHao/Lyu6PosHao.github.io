@@ -492,6 +492,21 @@ redirect_from:
   </section>
 
   <section class="lzh-section">
+    <h2 class="lzh-section-title">Awards</h2>
+    <div class="lzh-timeline">
+      <div class="lzh-time-item">
+        <p><span lang="zh">北京大学优秀科研奖</span> · 2024</p>
+      </div>
+      <div class="lzh-time-item">
+        <p><span lang="zh">北京大学三好学生</span> · 2026</p>
+      </div>
+      <div class="lzh-time-item">
+        <p><span lang="zh">北京大学廖凯原奖学金</span> Leo KoGuan Scholarship · 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lzh-section">
     <h2 class="lzh-section-title">Academic Service</h2>
     <div class="lzh-timeline">
       <div class="lzh-time-item">
