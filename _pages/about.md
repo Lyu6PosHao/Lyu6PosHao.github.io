@@ -82,12 +82,24 @@ redirect_from:
   .lzh-home .lzh-more-publications[open] .lzh-show-less { display: inline; }
   .lzh-home .lzh-news-list { list-style: none; margin: 0; padding: 0; }
   .lzh-home .lzh-news-list li {
+    position: relative;
+    padding-left: 0.85rem;
     display: grid;
     grid-template-columns: 5.2rem 1fr;
     gap: 0.6rem;
     margin-bottom: 0.65rem;
     font-size: 0.73rem;
     line-height: 1.35;
+  }
+  .lzh-home .lzh-news-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 0.25em;
+    height: 0.25em;
+    border-radius: 50%;
+    background: currentColor;
   }
   .lzh-home .lzh-news-list time { color: var(--muted); }
 
@@ -257,13 +269,13 @@ redirect_from:
   <section class="lzh-section">
     <h2 class="lzh-section-title">News</h2>
     <ul class="lzh-news-list">
-      <li><time datetime="2026-09">Sep 2026</time><span>RipplePLM was accepted to <strong>NeurIPS 2026</strong>.</span></li>
-      <li><time datetime="2026-09">Sep 2026</time><span>HME was selected as an <strong>Editors&rsquo; Highlight</strong> in Nature Communications.</span></li>
-      <li><time datetime="2026-07">Jul 2026</time><span>HME was published in <a href="https://www.nature.com/articles/s41467-026-74666-w">Nature Communications</a>.</span></li>
-      <li><time datetime="2026-06">Jun 2026</time><span>BioProAgent was selected for an <strong>oral presentation at ACL 2026</strong>.</span></li>
-      <li><time datetime="2026-05">May 2026</time><span>BioProBench was accepted to <strong>ICML 2026</strong>.</span></li>
-      <li><time datetime="2026-04">Apr 2026</time><span>BioProAgent was accepted to <strong>ACL 2026</strong>.</span></li>
-      <li><time datetime="2025-04">Apr 2025</time><span>ProLLaMA was accepted by <strong>IEEE Transactions on Artificial Intelligence</strong>.</span></li>
+      <li><time datetime="2026-09">Sep 2026</time><span>Our RipplePLM was accepted to <strong>NeurIPS 2026</strong>.</span></li>
+      <li><time datetime="2026-09">Sep 2026</time><span>Our HME was selected as an <strong>Editors&rsquo; Highlight</strong> in Nature Communications.</span></li>
+      <li><time datetime="2026-07">Jul 2026</time><span>Our HME was published in Nature Communications.</span></li>
+      <li><time datetime="2026-06">Jun 2026</time><span>Our BioProAgent was selected for an <strong>oral presentation at ACL 2026</strong>.</span></li>
+      <li><time datetime="2026-05">May 2026</time><span>Our BioProBench was accepted to <strong>ICML 2026</strong>.</span></li>
+      <li><time datetime="2026-04">Apr 2026</time><span>Our BioProAgent was accepted to <strong>ACL 2026</strong>.</span></li>
+      <li><time datetime="2025-04">Apr 2025</time><span>Our ProLLaMA was accepted by <strong>IEEE Transactions on Artificial Intelligence</strong>.</span></li>
     </ul>
   </section>
 
