@@ -64,44 +64,32 @@ redirect_from:
     padding-bottom: 0.35rem;
   }
 
-  .lzh-home .lzh-direction-tabs {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-    margin-bottom: 0.75rem;
-    border-bottom: 0;
-  }
-
-  .lzh-home .lzh-direction-tab {
-    appearance: none;
-    width: 100%;
-    padding: 0.45rem 0 0.55rem;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    color: var(--muted);
-    font: inherit;
-    font-size: 0.75rem;
-    font-weight: 600;
-    line-height: 1.25;
-    text-align: left;
+  .lzh-home .lzh-more-publications { margin-top: 1.8rem; }
+  .lzh-home .lzh-more-publications summary {
     cursor: pointer;
-    transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
-  }
-
-  .lzh-home .lzh-direction-tab:hover,
-  .lzh-home .lzh-direction-tab:focus-visible {
     color: var(--blue);
+    font-size: 0.73rem;
+    font-weight: 600;
+    padding: 0.4rem 0;
   }
-
-  .lzh-home .lzh-direction-tab[aria-selected="true"] {
-    color: var(--ink);
-    box-shadow: inset 0 -2px 0 var(--blue);
+  .lzh-home .lzh-more-publications summary:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 3px;
   }
-
-  .lzh-home .lzh-direction-panel[hidden] {
-    display: none;
+  .lzh-home .lzh-more-publications[open] > summary { margin-bottom: 1rem; }
+  .lzh-home .lzh-show-less,
+  .lzh-home .lzh-more-publications[open] .lzh-show-more { display: none; }
+  .lzh-home .lzh-more-publications[open] .lzh-show-less { display: inline; }
+  .lzh-home .lzh-news-list { list-style: none; margin: 0; padding: 0; }
+  .lzh-home .lzh-news-list li {
+    display: grid;
+    grid-template-columns: 5.2rem 1fr;
+    gap: 0.6rem;
+    margin-bottom: 0.65rem;
+    font-size: 0.73rem;
+    line-height: 1.35;
   }
+  .lzh-home .lzh-news-list time { color: var(--muted); }
 
   .lzh-home .lzh-pub-list {
     display: grid;
@@ -242,11 +230,6 @@ redirect_from:
     line-height: 1.3;
   }
 
-  @media (max-width: 640px) {
-    .lzh-home .lzh-direction-tabs {
-      grid-template-columns: 1fr;
-    }
-  }
 
 </style>
 
@@ -272,37 +255,23 @@ redirect_from:
   </section>
 
   <section class="lzh-section">
+    <h2 class="lzh-section-title">News</h2>
+    <ul class="lzh-news-list">
+      <li><time datetime="2026-09">Sep 2026</time><span>RipplePLM was accepted to <strong>NeurIPS 2026</strong>.</span></li>
+      <li><time datetime="2026-09">Sep 2026</time><span>HME was selected as an <strong>Editors&rsquo; Highlight</strong> in Nature Communications.</span></li>
+      <li><time datetime="2026-07">Jul 2026</time><span>HME was published in <a href="https://www.nature.com/articles/s41467-026-74666-w">Nature Communications</a>.</span></li>
+      <li><time datetime="2026-07">Jul 2026</time><span>BioProBench appeared at <strong>ICML 2026</strong>.</span></li>
+      <li><time datetime="2026-06">Jun 2026</time><span>BioProAgent was selected for an <strong>oral presentation at ACL 2026</strong>.</span></li>
+      <li><time datetime="2026-04">Apr 2026</time><span>BioProAgent was accepted to <strong>ACL 2026</strong>.</span></li>
+      <li><time datetime="2025-04">Apr 2025</time><span>ProLLaMA was accepted by <strong>IEEE Transactions on Artificial Intelligence</strong>.</span></li>
+    </ul>
+  </section>
+
+  <section class="lzh-section">
     <h2 class="lzh-section-title">Selected Publications</h2>
     <p class="lzh-pub-legend"><sup>&dagger;</sup> Equal contribution.</p>
-    <div data-direction-switcher>
-      <div class="lzh-direction-tabs" role="tablist" aria-label="Publication categories">
-        <button class="lzh-direction-tab" id="direction-tab-molecular" type="button" role="tab" aria-selected="true" aria-controls="direction-panel-molecular" tabindex="0">
-          Molecular and Protein Understanding and Design
-        </button>
-        <button class="lzh-direction-tab" id="direction-tab-lab" type="button" role="tab" aria-selected="false" aria-controls="direction-panel-lab" tabindex="-1">
-          Dry&ndash;Wet Closed-Loop Automated Laboratories
-        </button>
-        <button class="lzh-direction-tab" id="direction-tab-additional" type="button" role="tab" aria-selected="false" aria-controls="direction-panel-additional" tabindex="-1">
-          Earlier and Additional Work
-        </button>
-      </div>
-
-      <div class="lzh-direction-panel" id="direction-panel-molecular" role="tabpanel" aria-labelledby="direction-tab-molecular">
-        <div class="lzh-pub-list">
-      <article class="lzh-pub">
-        <div class="lzh-pub-body">
-          <h3 class="lzh-pub-title">RipplePLM: Structural and Property Decoupling for Protein Mutation Effect Generation</h3>
-          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Yuyang Liu, Yuyang Gao, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">NeurIPS, 2026</p>
-          <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2610.01891">Paper</a>
-            {% include github-repo-link.html repo="Lyu6PosHao/RipplePLM" %}
-            <a href="https://huggingface.co/datasets/GreatCaptainNemo/RipplePLM-data">Dataset</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="lzh-pub">
+    <div class="lzh-pub-list">
+<article class="lzh-pub">
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">Navigating Chemical-Linguistic Sharing Space with Heterogeneous Molecular Encoding</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Hao Li<sup>&dagger;</sup>, Yu Wang, Zijun Chen, Zhiyuan Yan, Zongying Lin, Yuyang Liu, Li Yuan, Yonghong Tian</p>
@@ -331,48 +300,20 @@ redirect_from:
         </div>
       </article>
 
-      <article class="lzh-pub">
+<article class="lzh-pub">
         <div class="lzh-pub-body">
-          <h3 class="lzh-pub-title">ProLLaMA: A Protein Large Language Model for Multitask Protein Language Processing</h3>
-          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Zongying Lin, Hao Li, Yuyang Liu, Jiaxi Cui, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">IEEE Transactions on Artificial Intelligence, 2025</p>
+          <h3 class="lzh-pub-title">RipplePLM: Structural and Property Decoupling for Protein Mutation Effect Generation</h3>
+          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Yuyang Liu, Yuyang Gao, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-pub-venue-full">NeurIPS, 2026</p>
           <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2402.16445">Paper</a>
-            {% include github-repo-link.html repo="PKU-YuanGroup/ProLLaMA" %}
-            <a href="https://huggingface.co/collections/GreatCaptainNemo/prollama">Weights</a>
-            <span class="lzh-pub-metric">60K+ downloads</span>
+            <a href="https://arxiv.org/abs/2610.01891">Paper</a>
+            {% include github-repo-link.html repo="Lyu6PosHao/RipplePLM" %}
+            <a href="https://huggingface.co/datasets/GreatCaptainNemo/RipplePLM-data">Dataset</a>
           </div>
         </div>
       </article>
 
-      <article class="lzh-pub">
-        <div class="lzh-pub-body">
-          <h3 class="lzh-pub-title">How to Detect and Defeat Molecular Mirage: A Metric-Driven Benchmark for Hallucination in LLM-based Molecular Comprehension</h3>
-          <p class="lzh-authors">Hao Li<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, He Cao, Zijing Liu, Zhiyuan Yan, Yu Wang, Yonghong Tian, Yu Li, Li Yuan</p>
-          <p class="lzh-pub-venue-full">NeurIPS AI for Science Workshop, 2025</p>
-          <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2504.12314">Paper</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="lzh-pub">
-        <div class="lzh-pub-body">
-          <h3 class="lzh-pub-title">TaxDiff: Taxonomic-Guided Diffusion Model for Protein Sequence Generation</h3>
-          <p class="lzh-authors">Zongying Lin<sup>&dagger;</sup>, Hao Li<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong>, Yu Wang, Bin Lin, Junwu Zhang, Zijun Chen, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian</p>
-          <p class="lzh-pub-venue-full">Science China Information Sciences, 2025</p>
-          <div class="lzh-pub-links">
-            <a href="https://arxiv.org/abs/2402.17156">Paper</a>
-            {% include github-repo-link.html repo="PKU-YuanGroup/TaxDiff" %}
-          </div>
-        </div>
-      </article>
-        </div>
-      </div>
-
-      <div class="lzh-direction-panel" id="direction-panel-lab" role="tabpanel" aria-labelledby="direction-tab-lab" hidden>
-        <div class="lzh-pub-list">
-      <article class="lzh-pub">
+<article class="lzh-pub">
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">Bridging the Gap in Autonomous Science: The Corpus and Benchmark for Biological Protocol Reasoning</h3>
           <p class="lzh-authors">Yuyang Liu<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Xiancheng Zhang, Jingya Wang, Li Yuan, Yonghong Tian</p>
@@ -386,7 +327,47 @@ redirect_from:
         </div>
       </article>
 
-      <article class="lzh-pub">
+<article class="lzh-pub">
+        <div class="lzh-pub-body">
+          <h3 class="lzh-pub-title">ProLLaMA: A Protein Large Language Model for Multitask Protein Language Processing</h3>
+          <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Zongying Lin, Hao Li, Yuyang Liu, Jiaxi Cui, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-pub-venue-full">IEEE Transactions on Artificial Intelligence, 2025</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2402.16445">Paper</a>
+            {% include github-repo-link.html repo="PKU-YuanGroup/ProLLaMA" %}
+            <a href="https://huggingface.co/collections/GreatCaptainNemo/prollama">Weights</a>
+            <span class="lzh-pub-metric">60K+ downloads</span>
+          </div>
+        </div>
+      </article>
+    </div>
+    <details class="lzh-more-publications">
+      <summary><span class="lzh-show-more">Show more publications (6)</span><span class="lzh-show-less">Show fewer publications</span></summary>
+      <div class="lzh-pub-list">
+<article class="lzh-pub">
+        <div class="lzh-pub-body">
+          <h3 class="lzh-pub-title">How to Detect and Defeat Molecular Mirage: A Metric-Driven Benchmark for Hallucination in LLM-based Molecular Comprehension</h3>
+          <p class="lzh-authors">Hao Li<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, He Cao, Zijing Liu, Zhiyuan Yan, Yu Wang, Yonghong Tian, Yu Li, Li Yuan</p>
+          <p class="lzh-pub-venue-full">NeurIPS AI for Science Workshop, 2025</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2504.12314">Paper</a>
+          </div>
+        </div>
+      </article>
+
+<article class="lzh-pub">
+        <div class="lzh-pub-body">
+          <h3 class="lzh-pub-title">TaxDiff: Taxonomic-Guided Diffusion Model for Protein Sequence Generation</h3>
+          <p class="lzh-authors">Zongying Lin<sup>&dagger;</sup>, Hao Li<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong>, Yu Wang, Bin Lin, Junwu Zhang, Zijun Chen, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian</p>
+          <p class="lzh-pub-venue-full">Science China Information Sciences, 2025</p>
+          <div class="lzh-pub-links">
+            <a href="https://arxiv.org/abs/2402.17156">Paper</a>
+            {% include github-repo-link.html repo="PKU-YuanGroup/TaxDiff" %}
+          </div>
+        </div>
+      </article>
+
+<article class="lzh-pub">
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">LabEvolver: Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents</h3>
           <p class="lzh-authors">Jingya Wang, Yuyang Gao, <strong>Liuzhenghao Lv</strong>, Yonghong Tian, Yuyang Liu</p>
@@ -399,7 +380,7 @@ redirect_from:
         </div>
       </article>
 
-      <article class="lzh-pub">
+<article class="lzh-pub">
         <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">BioProAgent: Neuro-Symbolic Grounding for Constrained Scientific Planning</h3>
           <p class="lzh-authors">Yuyang Liu, Jingya Wang, <strong>Liuzhenghao Lv</strong>, Yonghong Tian</p>
@@ -411,12 +392,8 @@ redirect_from:
           </div>
         </div>
       </article>
-        </div>
-      </div>
 
-      <div class="lzh-direction-panel" id="direction-panel-additional" role="tabpanel" aria-labelledby="direction-tab-additional" hidden>
-        <div class="lzh-pub-list">
-        <article class="lzh-pub">
+<article class="lzh-pub">
           <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">Machine Mindset: An MBTI Exploration of Large Language Models</h3>
           <p class="lzh-authors">Jiaxi Cui<sup>&dagger;</sup>, <strong>Liuzhenghao Lv</strong><sup>&dagger;</sup>, Jing Wen, Rongsheng Wang, Jing Tang, Yonghong Tian, Li Yuan</p>
@@ -427,7 +404,8 @@ redirect_from:
           </div>
           </div>
         </article>
-        <article class="lzh-pub">
+
+<article class="lzh-pub">
           <div class="lzh-pub-body">
           <h3 class="lzh-pub-title">Optimal ANN-SNN Conversion with Group Neurons</h3>
           <p class="lzh-authors"><strong>Liuzhenghao Lv</strong>, Wei Fang, Li Yuan, Yonghong Tian</p>
@@ -438,9 +416,8 @@ redirect_from:
           </div>
           </div>
         </article>
-        </div>
       </div>
-    </div>
+    </details>
   </section>
 
   <section class="lzh-section">
@@ -515,40 +492,3 @@ redirect_from:
     </div>
   </section>
 </div>
-
-<script>
-  (function () {
-    var switcher = document.querySelector('[data-direction-switcher]');
-    if (!switcher) return;
-
-    var tabs = Array.prototype.slice.call(switcher.querySelectorAll('[role="tab"]'));
-    var panels = Array.prototype.slice.call(switcher.querySelectorAll('[role="tabpanel"]'));
-
-    function activateTab(tab, moveFocus) {
-      tabs.forEach(function (item) {
-        var selected = item === tab;
-        item.setAttribute('aria-selected', selected ? 'true' : 'false');
-        item.setAttribute('tabindex', selected ? '0' : '-1');
-      });
-
-      panels.forEach(function (panel) {
-        panel.hidden = panel.id !== tab.getAttribute('aria-controls');
-      });
-
-      if (moveFocus) tab.focus();
-    }
-
-    tabs.forEach(function (tab, index) {
-      tab.addEventListener('click', function () {
-        activateTab(tab, false);
-      });
-
-      tab.addEventListener('keydown', function (event) {
-        if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
-        event.preventDefault();
-        var offset = event.key === 'ArrowRight' ? 1 : -1;
-        activateTab(tabs[(index + offset + tabs.length) % tabs.length], true);
-      });
-    });
-  }());
-</script>
