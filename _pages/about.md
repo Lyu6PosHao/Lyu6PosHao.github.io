@@ -260,8 +260,8 @@ redirect_from:
       <li><time datetime="2026-09">Sep 2026</time><span>RipplePLM was accepted to <strong>NeurIPS 2026</strong>.</span></li>
       <li><time datetime="2026-09">Sep 2026</time><span>HME was selected as an <strong>Editors&rsquo; Highlight</strong> in Nature Communications.</span></li>
       <li><time datetime="2026-07">Jul 2026</time><span>HME was published in <a href="https://www.nature.com/articles/s41467-026-74666-w">Nature Communications</a>.</span></li>
-      <li><time datetime="2026-07">Jul 2026</time><span>BioProBench appeared at <strong>ICML 2026</strong>.</span></li>
       <li><time datetime="2026-06">Jun 2026</time><span>BioProAgent was selected for an <strong>oral presentation at ACL 2026</strong>.</span></li>
+      <li><time datetime="2026-05">May 2026</time><span>BioProBench was accepted to <strong>ICML 2026</strong>.</span></li>
       <li><time datetime="2026-04">Apr 2026</time><span>BioProAgent was accepted to <strong>ACL 2026</strong>.</span></li>
       <li><time datetime="2025-04">Apr 2025</time><span>ProLLaMA was accepted by <strong>IEEE Transactions on Artificial Intelligence</strong>.</span></li>
     </ul>
