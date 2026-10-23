@@ -271,7 +271,7 @@ redirect_from:
     <ul class="lzh-news-list">
       <li><time datetime="2026-09">Sep 2026</time><span>Our RipplePLM was accepted to <strong>NeurIPS 2026</strong>.</span></li>
       <li><time datetime="2026-09">Sep 2026</time><span>Our HME was selected as an <strong>Editors&rsquo; Highlight</strong> in Nature Communications.</span></li>
-      <li><time datetime="2026-07">Jul 2026</time><span>Our HME was published in Nature Communications.</span></li>
+      <li><time datetime="2026-07">Jul 2026</time><span>Our HME was published in <strong>Nature Communications</strong>.</span></li>
       <li><time datetime="2026-06">Jun 2026</time><span>Our BioProAgent was selected for an <strong>oral presentation at ACL 2026</strong>.</span></li>
       <li><time datetime="2026-05">May 2026</time><span>Our BioProBench was accepted to <strong>ICML 2026</strong>.</span></li>
       <li><time datetime="2026-04">Apr 2026</time><span>Our BioProAgent was accepted to <strong>ACL 2026</strong>.</span></li>
